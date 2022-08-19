@@ -942,11 +942,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ashlen_naidoo\\Downloads\\TruckBookingSystem\\WarehouseReservationSystem.Models\\WarehouseReservationSystem.Models.csproj",
+      "projectUniqueName": "C:\\Users\\ashlen_naidoo\\OneDrive - FPT Group (PTY) LTD\\Documents\\GitHub\\TruckBookingSystem\\WarehouseReservationSystem.Models\\WarehouseReservationSystem.Models.csproj",
       "projectName": "WarehouseReservationSystem.Models",
-      "projectPath": "C:\\Users\\ashlen_naidoo\\Downloads\\TruckBookingSystem\\WarehouseReservationSystem.Models\\WarehouseReservationSystem.Models.csproj",
+      "projectPath": "C:\\Users\\ashlen_naidoo\\OneDrive - FPT Group (PTY) LTD\\Documents\\GitHub\\TruckBookingSystem\\WarehouseReservationSystem.Models\\WarehouseReservationSystem.Models.csproj",
       "packagesPath": "C:\\Users\\ashlen_naidoo\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ashlen_naidoo\\Downloads\\TruckBookingSystem\\WarehouseReservationSystem.Models\\obj\\",
+      "outputPath": "C:\\Users\\ashlen_naidoo\\OneDrive - FPT Group (PTY) LTD\\Documents\\GitHub\\TruckBookingSystem\\WarehouseReservationSystem.Models\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",

@@ -8,477 +8,477 @@ build_property.PlatformNeutralAssembly =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = WarehouseReservationSystem
 build_property.RootNamespace = WarehouseReservationSystem
-build_property.ProjectDir = C:\Users\ashlen_naidoo\Downloads\TruckBookingSystem\WarehouseReservationSystem\
+build_property.ProjectDir = C:\Users\ashlen_naidoo\OneDrive - FPT Group (PTY) LTD\Documents\GitHub\TruckBookingSystem\WarehouseReservationSystem\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = true
-build_property.MSBuildProjectDirectory = C:\Users\ashlen_naidoo\Downloads\TruckBookingSystem\WarehouseReservationSystem
+build_property.MSBuildProjectDirectory = C:\Users\ashlen_naidoo\OneDrive - FPT Group (PTY) LTD\Documents\GitHub\TruckBookingSystem\WarehouseReservationSystem
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/ashlen_naidoo/Downloads/TruckBookingSystem/WarehouseReservationSystem/Areas/FruitAnalytics/Views/Dash/Index.cshtml]
+[C:/Users/ashlen_naidoo/OneDrive - FPT Group (PTY) LTD/Documents/GitHub/TruckBookingSystem/WarehouseReservationSystem/Areas/FruitAnalytics/Views/Dash/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcRnJ1aXRBbmFseXRpY3NcVmlld3NcRGFzaFxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ashlen_naidoo/Downloads/TruckBookingSystem/WarehouseReservationSystem/Areas/FruitAnalytics/Views/Dash/Test.cshtml]
+[C:/Users/ashlen_naidoo/OneDrive - FPT Group (PTY) LTD/Documents/GitHub/TruckBookingSystem/WarehouseReservationSystem/Areas/FruitAnalytics/Views/Dash/Test.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcRnJ1aXRBbmFseXRpY3NcVmlld3NcRGFzaFxUZXN0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ashlen_naidoo/Downloads/TruckBookingSystem/WarehouseReservationSystem/Areas/FruitAnalytics/Views/Reports/Index.cshtml]
+[C:/Users/ashlen_naidoo/OneDrive - FPT Group (PTY) LTD/Documents/GitHub/TruckBookingSystem/WarehouseReservationSystem/Areas/FruitAnalytics/Views/Reports/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcRnJ1aXRBbmFseXRpY3NcVmlld3NcUmVwb3J0c1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ashlen_naidoo/Downloads/TruckBookingSystem/WarehouseReservationSystem/Areas/FruitAnalytics/Views/Reports/Test.cshtml]
+[C:/Users/ashlen_naidoo/OneDrive - FPT Group (PTY) LTD/Documents/GitHub/TruckBookingSystem/WarehouseReservationSystem/Areas/FruitAnalytics/Views/Reports/Test.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcRnJ1aXRBbmFseXRpY3NcVmlld3NcUmVwb3J0c1xUZXN0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ashlen_naidoo/Downloads/TruckBookingSystem/WarehouseReservationSystem/Areas/FruitAnalytics/Views/_ViewImports.cshtml]
+[C:/Users/ashlen_naidoo/OneDrive - FPT Group (PTY) LTD/Documents/GitHub/TruckBookingSystem/WarehouseReservationSystem/Areas/FruitAnalytics/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcRnJ1aXRBbmFseXRpY3NcVmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ashlen_naidoo/Downloads/TruckBookingSystem/WarehouseReservationSystem/Areas/FruitAnalytics/Views/_ViewStart.cshtml]
+[C:/Users/ashlen_naidoo/OneDrive - FPT Group (PTY) LTD/Documents/GitHub/TruckBookingSystem/WarehouseReservationSystem/Areas/FruitAnalytics/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcRnJ1aXRBbmFseXRpY3NcVmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ashlen_naidoo/Downloads/TruckBookingSystem/WarehouseReservationSystem/Areas/FruitCustomer/Views/Booking/Create.cshtml]
+[C:/Users/ashlen_naidoo/OneDrive - FPT Group (PTY) LTD/Documents/GitHub/TruckBookingSystem/WarehouseReservationSystem/Areas/FruitCustomer/Views/Booking/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcRnJ1aXRDdXN0b21lclxWaWV3c1xCb29raW5nXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ashlen_naidoo/Downloads/TruckBookingSystem/WarehouseReservationSystem/Areas/FruitCustomer/Views/Booking/Delete.cshtml]
+[C:/Users/ashlen_naidoo/OneDrive - FPT Group (PTY) LTD/Documents/GitHub/TruckBookingSystem/WarehouseReservationSystem/Areas/FruitCustomer/Views/Booking/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcRnJ1aXRDdXN0b21lclxWaWV3c1xCb29raW5nXERlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ashlen_naidoo/Downloads/TruckBookingSystem/WarehouseReservationSystem/Areas/FruitCustomer/Views/Booking/Details.cshtml]
+[C:/Users/ashlen_naidoo/OneDrive - FPT Group (PTY) LTD/Documents/GitHub/TruckBookingSystem/WarehouseReservationSystem/Areas/FruitCustomer/Views/Booking/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcRnJ1aXRDdXN0b21lclxWaWV3c1xCb29raW5nXERldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ashlen_naidoo/Downloads/TruckBookingSystem/WarehouseReservationSystem/Areas/FruitCustomer/Views/Booking/Edit.cshtml]
+[C:/Users/ashlen_naidoo/OneDrive - FPT Group (PTY) LTD/Documents/GitHub/TruckBookingSystem/WarehouseReservationSystem/Areas/FruitCustomer/Views/Booking/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcRnJ1aXRDdXN0b21lclxWaWV3c1xCb29raW5nXEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ashlen_naidoo/Downloads/TruckBookingSystem/WarehouseReservationSystem/Areas/FruitCustomer/Views/Booking/Index.cshtml]
+[C:/Users/ashlen_naidoo/OneDrive - FPT Group (PTY) LTD/Documents/GitHub/TruckBookingSystem/WarehouseReservationSystem/Areas/FruitCustomer/Views/Booking/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcRnJ1aXRDdXN0b21lclxWaWV3c1xCb29raW5nXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ashlen_naidoo/Downloads/TruckBookingSystem/WarehouseReservationSystem/Areas/FruitCustomer/Views/Booking/StatusUpdate.cshtml]
+[C:/Users/ashlen_naidoo/OneDrive - FPT Group (PTY) LTD/Documents/GitHub/TruckBookingSystem/WarehouseReservationSystem/Areas/FruitCustomer/Views/Booking/StatusUpdate.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcRnJ1aXRDdXN0b21lclxWaWV3c1xCb29raW5nXFN0YXR1c1VwZGF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ashlen_naidoo/Downloads/TruckBookingSystem/WarehouseReservationSystem/Areas/FruitCustomer/Views/Exporter/Create.cshtml]
+[C:/Users/ashlen_naidoo/OneDrive - FPT Group (PTY) LTD/Documents/GitHub/TruckBookingSystem/WarehouseReservationSystem/Areas/FruitCustomer/Views/Exporter/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcRnJ1aXRDdXN0b21lclxWaWV3c1xFeHBvcnRlclxDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ashlen_naidoo/Downloads/TruckBookingSystem/WarehouseReservationSystem/Areas/FruitCustomer/Views/Exporter/Delete.cshtml]
+[C:/Users/ashlen_naidoo/OneDrive - FPT Group (PTY) LTD/Documents/GitHub/TruckBookingSystem/WarehouseReservationSystem/Areas/FruitCustomer/Views/Exporter/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcRnJ1aXRDdXN0b21lclxWaWV3c1xFeHBvcnRlclxEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ashlen_naidoo/Downloads/TruckBookingSystem/WarehouseReservationSystem/Areas/FruitCustomer/Views/Exporter/Details.cshtml]
+[C:/Users/ashlen_naidoo/OneDrive - FPT Group (PTY) LTD/Documents/GitHub/TruckBookingSystem/WarehouseReservationSystem/Areas/FruitCustomer/Views/Exporter/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcRnJ1aXRDdXN0b21lclxWaWV3c1xFeHBvcnRlclxEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ashlen_naidoo/Downloads/TruckBookingSystem/WarehouseReservationSystem/Areas/FruitCustomer/Views/Exporter/Edit.cshtml]
+[C:/Users/ashlen_naidoo/OneDrive - FPT Group (PTY) LTD/Documents/GitHub/TruckBookingSystem/WarehouseReservationSystem/Areas/FruitCustomer/Views/Exporter/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcRnJ1aXRDdXN0b21lclxWaWV3c1xFeHBvcnRlclxFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ashlen_naidoo/Downloads/TruckBookingSystem/WarehouseReservationSystem/Areas/FruitCustomer/Views/Exporter/Index.cshtml]
+[C:/Users/ashlen_naidoo/OneDrive - FPT Group (PTY) LTD/Documents/GitHub/TruckBookingSystem/WarehouseReservationSystem/Areas/FruitCustomer/Views/Exporter/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcRnJ1aXRDdXN0b21lclxWaWV3c1xFeHBvcnRlclxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ashlen_naidoo/Downloads/TruckBookingSystem/WarehouseReservationSystem/Areas/FruitCustomer/Views/Exporter/ManageIndex.cshtml]
+[C:/Users/ashlen_naidoo/OneDrive - FPT Group (PTY) LTD/Documents/GitHub/TruckBookingSystem/WarehouseReservationSystem/Areas/FruitCustomer/Views/Exporter/ManageIndex.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcRnJ1aXRDdXN0b21lclxWaWV3c1xFeHBvcnRlclxNYW5hZ2VJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ashlen_naidoo/Downloads/TruckBookingSystem/WarehouseReservationSystem/Areas/FruitCustomer/Views/MarketType/Create.cshtml]
+[C:/Users/ashlen_naidoo/OneDrive - FPT Group (PTY) LTD/Documents/GitHub/TruckBookingSystem/WarehouseReservationSystem/Areas/FruitCustomer/Views/MarketType/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcRnJ1aXRDdXN0b21lclxWaWV3c1xNYXJrZXRUeXBlXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ashlen_naidoo/Downloads/TruckBookingSystem/WarehouseReservationSystem/Areas/FruitCustomer/Views/MarketType/Delete.cshtml]
+[C:/Users/ashlen_naidoo/OneDrive - FPT Group (PTY) LTD/Documents/GitHub/TruckBookingSystem/WarehouseReservationSystem/Areas/FruitCustomer/Views/MarketType/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcRnJ1aXRDdXN0b21lclxWaWV3c1xNYXJrZXRUeXBlXERlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ashlen_naidoo/Downloads/TruckBookingSystem/WarehouseReservationSystem/Areas/FruitCustomer/Views/MarketType/Details.cshtml]
+[C:/Users/ashlen_naidoo/OneDrive - FPT Group (PTY) LTD/Documents/GitHub/TruckBookingSystem/WarehouseReservationSystem/Areas/FruitCustomer/Views/MarketType/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcRnJ1aXRDdXN0b21lclxWaWV3c1xNYXJrZXRUeXBlXERldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ashlen_naidoo/Downloads/TruckBookingSystem/WarehouseReservationSystem/Areas/FruitCustomer/Views/MarketType/Edit.cshtml]
+[C:/Users/ashlen_naidoo/OneDrive - FPT Group (PTY) LTD/Documents/GitHub/TruckBookingSystem/WarehouseReservationSystem/Areas/FruitCustomer/Views/MarketType/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcRnJ1aXRDdXN0b21lclxWaWV3c1xNYXJrZXRUeXBlXEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ashlen_naidoo/Downloads/TruckBookingSystem/WarehouseReservationSystem/Areas/FruitCustomer/Views/MarketType/Index.cshtml]
+[C:/Users/ashlen_naidoo/OneDrive - FPT Group (PTY) LTD/Documents/GitHub/TruckBookingSystem/WarehouseReservationSystem/Areas/FruitCustomer/Views/MarketType/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcRnJ1aXRDdXN0b21lclxWaWV3c1xNYXJrZXRUeXBlXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ashlen_naidoo/Downloads/TruckBookingSystem/WarehouseReservationSystem/Areas/FruitCustomer/Views/Slots/Create.cshtml]
+[C:/Users/ashlen_naidoo/OneDrive - FPT Group (PTY) LTD/Documents/GitHub/TruckBookingSystem/WarehouseReservationSystem/Areas/FruitCustomer/Views/Slots/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcRnJ1aXRDdXN0b21lclxWaWV3c1xTbG90c1xDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ashlen_naidoo/Downloads/TruckBookingSystem/WarehouseReservationSystem/Areas/FruitCustomer/Views/Slots/Delete.cshtml]
+[C:/Users/ashlen_naidoo/OneDrive - FPT Group (PTY) LTD/Documents/GitHub/TruckBookingSystem/WarehouseReservationSystem/Areas/FruitCustomer/Views/Slots/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcRnJ1aXRDdXN0b21lclxWaWV3c1xTbG90c1xEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ashlen_naidoo/Downloads/TruckBookingSystem/WarehouseReservationSystem/Areas/FruitCustomer/Views/Slots/Details.cshtml]
+[C:/Users/ashlen_naidoo/OneDrive - FPT Group (PTY) LTD/Documents/GitHub/TruckBookingSystem/WarehouseReservationSystem/Areas/FruitCustomer/Views/Slots/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcRnJ1aXRDdXN0b21lclxWaWV3c1xTbG90c1xEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ashlen_naidoo/Downloads/TruckBookingSystem/WarehouseReservationSystem/Areas/FruitCustomer/Views/Slots/Edit.cshtml]
+[C:/Users/ashlen_naidoo/OneDrive - FPT Group (PTY) LTD/Documents/GitHub/TruckBookingSystem/WarehouseReservationSystem/Areas/FruitCustomer/Views/Slots/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcRnJ1aXRDdXN0b21lclxWaWV3c1xTbG90c1xFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ashlen_naidoo/Downloads/TruckBookingSystem/WarehouseReservationSystem/Areas/FruitCustomer/Views/Slots/Index.cshtml]
+[C:/Users/ashlen_naidoo/OneDrive - FPT Group (PTY) LTD/Documents/GitHub/TruckBookingSystem/WarehouseReservationSystem/Areas/FruitCustomer/Views/Slots/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcRnJ1aXRDdXN0b21lclxWaWV3c1xTbG90c1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ashlen_naidoo/Downloads/TruckBookingSystem/WarehouseReservationSystem/Areas/FruitCustomer/Views/Transporter/Create.cshtml]
+[C:/Users/ashlen_naidoo/OneDrive - FPT Group (PTY) LTD/Documents/GitHub/TruckBookingSystem/WarehouseReservationSystem/Areas/FruitCustomer/Views/Transporter/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcRnJ1aXRDdXN0b21lclxWaWV3c1xUcmFuc3BvcnRlclxDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ashlen_naidoo/Downloads/TruckBookingSystem/WarehouseReservationSystem/Areas/FruitCustomer/Views/Transporter/Delete.cshtml]
+[C:/Users/ashlen_naidoo/OneDrive - FPT Group (PTY) LTD/Documents/GitHub/TruckBookingSystem/WarehouseReservationSystem/Areas/FruitCustomer/Views/Transporter/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcRnJ1aXRDdXN0b21lclxWaWV3c1xUcmFuc3BvcnRlclxEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ashlen_naidoo/Downloads/TruckBookingSystem/WarehouseReservationSystem/Areas/FruitCustomer/Views/Transporter/Details.cshtml]
+[C:/Users/ashlen_naidoo/OneDrive - FPT Group (PTY) LTD/Documents/GitHub/TruckBookingSystem/WarehouseReservationSystem/Areas/FruitCustomer/Views/Transporter/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcRnJ1aXRDdXN0b21lclxWaWV3c1xUcmFuc3BvcnRlclxEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ashlen_naidoo/Downloads/TruckBookingSystem/WarehouseReservationSystem/Areas/FruitCustomer/Views/Transporter/Edit.cshtml]
+[C:/Users/ashlen_naidoo/OneDrive - FPT Group (PTY) LTD/Documents/GitHub/TruckBookingSystem/WarehouseReservationSystem/Areas/FruitCustomer/Views/Transporter/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcRnJ1aXRDdXN0b21lclxWaWV3c1xUcmFuc3BvcnRlclxFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ashlen_naidoo/Downloads/TruckBookingSystem/WarehouseReservationSystem/Areas/FruitCustomer/Views/Transporter/Index.cshtml]
+[C:/Users/ashlen_naidoo/OneDrive - FPT Group (PTY) LTD/Documents/GitHub/TruckBookingSystem/WarehouseReservationSystem/Areas/FruitCustomer/Views/Transporter/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcRnJ1aXRDdXN0b21lclxWaWV3c1xUcmFuc3BvcnRlclxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ashlen_naidoo/Downloads/TruckBookingSystem/WarehouseReservationSystem/Areas/FruitCustomer/Views/User/Index.cshtml]
+[C:/Users/ashlen_naidoo/OneDrive - FPT Group (PTY) LTD/Documents/GitHub/TruckBookingSystem/WarehouseReservationSystem/Areas/FruitCustomer/Views/User/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcRnJ1aXRDdXN0b21lclxWaWV3c1xVc2VyXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ashlen_naidoo/Downloads/TruckBookingSystem/WarehouseReservationSystem/Areas/FruitCustomer/Views/Warehouse/Create.cshtml]
+[C:/Users/ashlen_naidoo/OneDrive - FPT Group (PTY) LTD/Documents/GitHub/TruckBookingSystem/WarehouseReservationSystem/Areas/FruitCustomer/Views/Warehouse/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcRnJ1aXRDdXN0b21lclxWaWV3c1xXYXJlaG91c2VcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ashlen_naidoo/Downloads/TruckBookingSystem/WarehouseReservationSystem/Areas/FruitCustomer/Views/Warehouse/Delete.cshtml]
+[C:/Users/ashlen_naidoo/OneDrive - FPT Group (PTY) LTD/Documents/GitHub/TruckBookingSystem/WarehouseReservationSystem/Areas/FruitCustomer/Views/Warehouse/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcRnJ1aXRDdXN0b21lclxWaWV3c1xXYXJlaG91c2VcRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ashlen_naidoo/Downloads/TruckBookingSystem/WarehouseReservationSystem/Areas/FruitCustomer/Views/Warehouse/Details.cshtml]
+[C:/Users/ashlen_naidoo/OneDrive - FPT Group (PTY) LTD/Documents/GitHub/TruckBookingSystem/WarehouseReservationSystem/Areas/FruitCustomer/Views/Warehouse/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcRnJ1aXRDdXN0b21lclxWaWV3c1xXYXJlaG91c2VcRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ashlen_naidoo/Downloads/TruckBookingSystem/WarehouseReservationSystem/Areas/FruitCustomer/Views/Warehouse/Edit.cshtml]
+[C:/Users/ashlen_naidoo/OneDrive - FPT Group (PTY) LTD/Documents/GitHub/TruckBookingSystem/WarehouseReservationSystem/Areas/FruitCustomer/Views/Warehouse/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcRnJ1aXRDdXN0b21lclxWaWV3c1xXYXJlaG91c2VcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ashlen_naidoo/Downloads/TruckBookingSystem/WarehouseReservationSystem/Areas/FruitCustomer/Views/Warehouse/Index.cshtml]
+[C:/Users/ashlen_naidoo/OneDrive - FPT Group (PTY) LTD/Documents/GitHub/TruckBookingSystem/WarehouseReservationSystem/Areas/FruitCustomer/Views/Warehouse/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcRnJ1aXRDdXN0b21lclxWaWV3c1xXYXJlaG91c2VcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ashlen_naidoo/Downloads/TruckBookingSystem/WarehouseReservationSystem/Areas/FruitCustomer/Views/_ViewImports.cshtml]
+[C:/Users/ashlen_naidoo/OneDrive - FPT Group (PTY) LTD/Documents/GitHub/TruckBookingSystem/WarehouseReservationSystem/Areas/FruitCustomer/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcRnJ1aXRDdXN0b21lclxWaWV3c1xfVmlld0ltcG9ydHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ashlen_naidoo/Downloads/TruckBookingSystem/WarehouseReservationSystem/Areas/FruitCustomer/Views/_ViewStart.cshtml]
+[C:/Users/ashlen_naidoo/OneDrive - FPT Group (PTY) LTD/Documents/GitHub/TruckBookingSystem/WarehouseReservationSystem/Areas/FruitCustomer/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcRnJ1aXRDdXN0b21lclxWaWV3c1xfVmlld1N0YXJ0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ashlen_naidoo/Downloads/TruckBookingSystem/WarehouseReservationSystem/Areas/GCCustomer/Views/GCBooking/Create.cshtml]
+[C:/Users/ashlen_naidoo/OneDrive - FPT Group (PTY) LTD/Documents/GitHub/TruckBookingSystem/WarehouseReservationSystem/Areas/GCCustomer/Views/GCBooking/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcR0NDdXN0b21lclxWaWV3c1xHQ0Jvb2tpbmdcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ashlen_naidoo/Downloads/TruckBookingSystem/WarehouseReservationSystem/Areas/GCCustomer/Views/GCBooking/Create2.cshtml]
+[C:/Users/ashlen_naidoo/OneDrive - FPT Group (PTY) LTD/Documents/GitHub/TruckBookingSystem/WarehouseReservationSystem/Areas/GCCustomer/Views/GCBooking/Create2.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcR0NDdXN0b21lclxWaWV3c1xHQ0Jvb2tpbmdcQ3JlYXRlMi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ashlen_naidoo/Downloads/TruckBookingSystem/WarehouseReservationSystem/Areas/GCCustomer/Views/GCBooking/Delete.cshtml]
+[C:/Users/ashlen_naidoo/OneDrive - FPT Group (PTY) LTD/Documents/GitHub/TruckBookingSystem/WarehouseReservationSystem/Areas/GCCustomer/Views/GCBooking/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcR0NDdXN0b21lclxWaWV3c1xHQ0Jvb2tpbmdcRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ashlen_naidoo/Downloads/TruckBookingSystem/WarehouseReservationSystem/Areas/GCCustomer/Views/GCBooking/Details.cshtml]
+[C:/Users/ashlen_naidoo/OneDrive - FPT Group (PTY) LTD/Documents/GitHub/TruckBookingSystem/WarehouseReservationSystem/Areas/GCCustomer/Views/GCBooking/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcR0NDdXN0b21lclxWaWV3c1xHQ0Jvb2tpbmdcRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ashlen_naidoo/Downloads/TruckBookingSystem/WarehouseReservationSystem/Areas/GCCustomer/Views/GCBooking/Edit.cshtml]
+[C:/Users/ashlen_naidoo/OneDrive - FPT Group (PTY) LTD/Documents/GitHub/TruckBookingSystem/WarehouseReservationSystem/Areas/GCCustomer/Views/GCBooking/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcR0NDdXN0b21lclxWaWV3c1xHQ0Jvb2tpbmdcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ashlen_naidoo/Downloads/TruckBookingSystem/WarehouseReservationSystem/Areas/GCCustomer/Views/GCBooking/Index.cshtml]
+[C:/Users/ashlen_naidoo/OneDrive - FPT Group (PTY) LTD/Documents/GitHub/TruckBookingSystem/WarehouseReservationSystem/Areas/GCCustomer/Views/GCBooking/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcR0NDdXN0b21lclxWaWV3c1xHQ0Jvb2tpbmdcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ashlen_naidoo/Downloads/TruckBookingSystem/WarehouseReservationSystem/Areas/GCCustomer/Views/Vessel/Create.cshtml]
+[C:/Users/ashlen_naidoo/OneDrive - FPT Group (PTY) LTD/Documents/GitHub/TruckBookingSystem/WarehouseReservationSystem/Areas/GCCustomer/Views/Vessel/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcR0NDdXN0b21lclxWaWV3c1xWZXNzZWxcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ashlen_naidoo/Downloads/TruckBookingSystem/WarehouseReservationSystem/Areas/GCCustomer/Views/Vessel/Delete.cshtml]
+[C:/Users/ashlen_naidoo/OneDrive - FPT Group (PTY) LTD/Documents/GitHub/TruckBookingSystem/WarehouseReservationSystem/Areas/GCCustomer/Views/Vessel/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcR0NDdXN0b21lclxWaWV3c1xWZXNzZWxcRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ashlen_naidoo/Downloads/TruckBookingSystem/WarehouseReservationSystem/Areas/GCCustomer/Views/Vessel/Details.cshtml]
+[C:/Users/ashlen_naidoo/OneDrive - FPT Group (PTY) LTD/Documents/GitHub/TruckBookingSystem/WarehouseReservationSystem/Areas/GCCustomer/Views/Vessel/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcR0NDdXN0b21lclxWaWV3c1xWZXNzZWxcRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ashlen_naidoo/Downloads/TruckBookingSystem/WarehouseReservationSystem/Areas/GCCustomer/Views/Vessel/Edit.cshtml]
+[C:/Users/ashlen_naidoo/OneDrive - FPT Group (PTY) LTD/Documents/GitHub/TruckBookingSystem/WarehouseReservationSystem/Areas/GCCustomer/Views/Vessel/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcR0NDdXN0b21lclxWaWV3c1xWZXNzZWxcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ashlen_naidoo/Downloads/TruckBookingSystem/WarehouseReservationSystem/Areas/GCCustomer/Views/Vessel/Index.cshtml]
+[C:/Users/ashlen_naidoo/OneDrive - FPT Group (PTY) LTD/Documents/GitHub/TruckBookingSystem/WarehouseReservationSystem/Areas/GCCustomer/Views/Vessel/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcR0NDdXN0b21lclxWaWV3c1xWZXNzZWxcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ashlen_naidoo/Downloads/TruckBookingSystem/WarehouseReservationSystem/Areas/GCCustomer/Views/_ViewImports.cshtml]
+[C:/Users/ashlen_naidoo/OneDrive - FPT Group (PTY) LTD/Documents/GitHub/TruckBookingSystem/WarehouseReservationSystem/Areas/GCCustomer/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcR0NDdXN0b21lclxWaWV3c1xfVmlld0ltcG9ydHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ashlen_naidoo/Downloads/TruckBookingSystem/WarehouseReservationSystem/Areas/GCCustomer/Views/_ViewStart.cshtml]
+[C:/Users/ashlen_naidoo/OneDrive - FPT Group (PTY) LTD/Documents/GitHub/TruckBookingSystem/WarehouseReservationSystem/Areas/GCCustomer/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcR0NDdXN0b21lclxWaWV3c1xfVmlld1N0YXJ0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ashlen_naidoo/Downloads/TruckBookingSystem/WarehouseReservationSystem/Areas/Identity/Pages/Account/AccessDenied.cshtml]
+[C:/Users/ashlen_naidoo/OneDrive - FPT Group (PTY) LTD/Documents/GitHub/TruckBookingSystem/WarehouseReservationSystem/Areas/Identity/Pages/Account/AccessDenied.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxBY2Nlc3NEZW5pZWQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ashlen_naidoo/Downloads/TruckBookingSystem/WarehouseReservationSystem/Areas/Identity/Pages/Account/ConfirmEmail.cshtml]
+[C:/Users/ashlen_naidoo/OneDrive - FPT Group (PTY) LTD/Documents/GitHub/TruckBookingSystem/WarehouseReservationSystem/Areas/Identity/Pages/Account/ConfirmEmail.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxDb25maXJtRW1haWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ashlen_naidoo/Downloads/TruckBookingSystem/WarehouseReservationSystem/Areas/Identity/Pages/Account/ConfirmEmailChange.cshtml]
+[C:/Users/ashlen_naidoo/OneDrive - FPT Group (PTY) LTD/Documents/GitHub/TruckBookingSystem/WarehouseReservationSystem/Areas/Identity/Pages/Account/ConfirmEmailChange.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxDb25maXJtRW1haWxDaGFuZ2UuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ashlen_naidoo/Downloads/TruckBookingSystem/WarehouseReservationSystem/Areas/Identity/Pages/Account/ExternalLogin.cshtml]
+[C:/Users/ashlen_naidoo/OneDrive - FPT Group (PTY) LTD/Documents/GitHub/TruckBookingSystem/WarehouseReservationSystem/Areas/Identity/Pages/Account/ExternalLogin.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxFeHRlcm5hbExvZ2luLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ashlen_naidoo/Downloads/TruckBookingSystem/WarehouseReservationSystem/Areas/Identity/Pages/Account/ForgotPassword.cshtml]
+[C:/Users/ashlen_naidoo/OneDrive - FPT Group (PTY) LTD/Documents/GitHub/TruckBookingSystem/WarehouseReservationSystem/Areas/Identity/Pages/Account/ForgotPassword.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxGb3Jnb3RQYXNzd29yZC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ashlen_naidoo/Downloads/TruckBookingSystem/WarehouseReservationSystem/Areas/Identity/Pages/Account/ForgotPasswordConfirmation.cshtml]
+[C:/Users/ashlen_naidoo/OneDrive - FPT Group (PTY) LTD/Documents/GitHub/TruckBookingSystem/WarehouseReservationSystem/Areas/Identity/Pages/Account/ForgotPasswordConfirmation.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxGb3Jnb3RQYXNzd29yZENvbmZpcm1hdGlvbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ashlen_naidoo/Downloads/TruckBookingSystem/WarehouseReservationSystem/Areas/Identity/Pages/Account/Lockout.cshtml]
+[C:/Users/ashlen_naidoo/OneDrive - FPT Group (PTY) LTD/Documents/GitHub/TruckBookingSystem/WarehouseReservationSystem/Areas/Identity/Pages/Account/Lockout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxMb2Nrb3V0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ashlen_naidoo/Downloads/TruckBookingSystem/WarehouseReservationSystem/Areas/Identity/Pages/Account/Login.cshtml]
+[C:/Users/ashlen_naidoo/OneDrive - FPT Group (PTY) LTD/Documents/GitHub/TruckBookingSystem/WarehouseReservationSystem/Areas/Identity/Pages/Account/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxMb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ashlen_naidoo/Downloads/TruckBookingSystem/WarehouseReservationSystem/Areas/Identity/Pages/Account/LoginWith2fa.cshtml]
+[C:/Users/ashlen_naidoo/OneDrive - FPT Group (PTY) LTD/Documents/GitHub/TruckBookingSystem/WarehouseReservationSystem/Areas/Identity/Pages/Account/LoginWith2fa.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxMb2dpbldpdGgyZmEuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ashlen_naidoo/Downloads/TruckBookingSystem/WarehouseReservationSystem/Areas/Identity/Pages/Account/LoginWithRecoveryCode.cshtml]
+[C:/Users/ashlen_naidoo/OneDrive - FPT Group (PTY) LTD/Documents/GitHub/TruckBookingSystem/WarehouseReservationSystem/Areas/Identity/Pages/Account/LoginWithRecoveryCode.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxMb2dpbldpdGhSZWNvdmVyeUNvZGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ashlen_naidoo/Downloads/TruckBookingSystem/WarehouseReservationSystem/Areas/Identity/Pages/Account/Logout.cshtml]
+[C:/Users/ashlen_naidoo/OneDrive - FPT Group (PTY) LTD/Documents/GitHub/TruckBookingSystem/WarehouseReservationSystem/Areas/Identity/Pages/Account/Logout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxMb2dvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ashlen_naidoo/Downloads/TruckBookingSystem/WarehouseReservationSystem/Areas/Identity/Pages/Account/Manage/ChangePassword.cshtml]
+[C:/Users/ashlen_naidoo/OneDrive - FPT Group (PTY) LTD/Documents/GitHub/TruckBookingSystem/WarehouseReservationSystem/Areas/Identity/Pages/Account/Manage/ChangePassword.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcQ2hhbmdlUGFzc3dvcmQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ashlen_naidoo/Downloads/TruckBookingSystem/WarehouseReservationSystem/Areas/Identity/Pages/Account/Manage/DeletePersonalData.cshtml]
+[C:/Users/ashlen_naidoo/OneDrive - FPT Group (PTY) LTD/Documents/GitHub/TruckBookingSystem/WarehouseReservationSystem/Areas/Identity/Pages/Account/Manage/DeletePersonalData.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcRGVsZXRlUGVyc29uYWxEYXRhLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ashlen_naidoo/Downloads/TruckBookingSystem/WarehouseReservationSystem/Areas/Identity/Pages/Account/Manage/Disable2fa.cshtml]
+[C:/Users/ashlen_naidoo/OneDrive - FPT Group (PTY) LTD/Documents/GitHub/TruckBookingSystem/WarehouseReservationSystem/Areas/Identity/Pages/Account/Manage/Disable2fa.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcRGlzYWJsZTJmYS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ashlen_naidoo/Downloads/TruckBookingSystem/WarehouseReservationSystem/Areas/Identity/Pages/Account/Manage/DownloadPersonalData.cshtml]
+[C:/Users/ashlen_naidoo/OneDrive - FPT Group (PTY) LTD/Documents/GitHub/TruckBookingSystem/WarehouseReservationSystem/Areas/Identity/Pages/Account/Manage/DownloadPersonalData.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcRG93bmxvYWRQZXJzb25hbERhdGEuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ashlen_naidoo/Downloads/TruckBookingSystem/WarehouseReservationSystem/Areas/Identity/Pages/Account/Manage/Email.cshtml]
+[C:/Users/ashlen_naidoo/OneDrive - FPT Group (PTY) LTD/Documents/GitHub/TruckBookingSystem/WarehouseReservationSystem/Areas/Identity/Pages/Account/Manage/Email.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcRW1haWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ashlen_naidoo/Downloads/TruckBookingSystem/WarehouseReservationSystem/Areas/Identity/Pages/Account/Manage/EnableAuthenticator.cshtml]
+[C:/Users/ashlen_naidoo/OneDrive - FPT Group (PTY) LTD/Documents/GitHub/TruckBookingSystem/WarehouseReservationSystem/Areas/Identity/Pages/Account/Manage/EnableAuthenticator.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcRW5hYmxlQXV0aGVudGljYXRvci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ashlen_naidoo/Downloads/TruckBookingSystem/WarehouseReservationSystem/Areas/Identity/Pages/Account/Manage/ExternalLogins.cshtml]
+[C:/Users/ashlen_naidoo/OneDrive - FPT Group (PTY) LTD/Documents/GitHub/TruckBookingSystem/WarehouseReservationSystem/Areas/Identity/Pages/Account/Manage/ExternalLogins.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcRXh0ZXJuYWxMb2dpbnMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ashlen_naidoo/Downloads/TruckBookingSystem/WarehouseReservationSystem/Areas/Identity/Pages/Account/Manage/GenerateRecoveryCodes.cshtml]
+[C:/Users/ashlen_naidoo/OneDrive - FPT Group (PTY) LTD/Documents/GitHub/TruckBookingSystem/WarehouseReservationSystem/Areas/Identity/Pages/Account/Manage/GenerateRecoveryCodes.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcR2VuZXJhdGVSZWNvdmVyeUNvZGVzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ashlen_naidoo/Downloads/TruckBookingSystem/WarehouseReservationSystem/Areas/Identity/Pages/Account/Manage/Index.cshtml]
+[C:/Users/ashlen_naidoo/OneDrive - FPT Group (PTY) LTD/Documents/GitHub/TruckBookingSystem/WarehouseReservationSystem/Areas/Identity/Pages/Account/Manage/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ashlen_naidoo/Downloads/TruckBookingSystem/WarehouseReservationSystem/Areas/Identity/Pages/Account/Manage/PersonalData.cshtml]
+[C:/Users/ashlen_naidoo/OneDrive - FPT Group (PTY) LTD/Documents/GitHub/TruckBookingSystem/WarehouseReservationSystem/Areas/Identity/Pages/Account/Manage/PersonalData.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcUGVyc29uYWxEYXRhLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ashlen_naidoo/Downloads/TruckBookingSystem/WarehouseReservationSystem/Areas/Identity/Pages/Account/Manage/ResetAuthenticator.cshtml]
+[C:/Users/ashlen_naidoo/OneDrive - FPT Group (PTY) LTD/Documents/GitHub/TruckBookingSystem/WarehouseReservationSystem/Areas/Identity/Pages/Account/Manage/ResetAuthenticator.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcUmVzZXRBdXRoZW50aWNhdG9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ashlen_naidoo/Downloads/TruckBookingSystem/WarehouseReservationSystem/Areas/Identity/Pages/Account/Manage/SetPassword.cshtml]
+[C:/Users/ashlen_naidoo/OneDrive - FPT Group (PTY) LTD/Documents/GitHub/TruckBookingSystem/WarehouseReservationSystem/Areas/Identity/Pages/Account/Manage/SetPassword.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcU2V0UGFzc3dvcmQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ashlen_naidoo/Downloads/TruckBookingSystem/WarehouseReservationSystem/Areas/Identity/Pages/Account/Manage/ShowRecoveryCodes.cshtml]
+[C:/Users/ashlen_naidoo/OneDrive - FPT Group (PTY) LTD/Documents/GitHub/TruckBookingSystem/WarehouseReservationSystem/Areas/Identity/Pages/Account/Manage/ShowRecoveryCodes.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcU2hvd1JlY292ZXJ5Q29kZXMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ashlen_naidoo/Downloads/TruckBookingSystem/WarehouseReservationSystem/Areas/Identity/Pages/Account/Manage/TwoFactorAuthentication.cshtml]
+[C:/Users/ashlen_naidoo/OneDrive - FPT Group (PTY) LTD/Documents/GitHub/TruckBookingSystem/WarehouseReservationSystem/Areas/Identity/Pages/Account/Manage/TwoFactorAuthentication.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcVHdvRmFjdG9yQXV0aGVudGljYXRpb24uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ashlen_naidoo/Downloads/TruckBookingSystem/WarehouseReservationSystem/Areas/Identity/Pages/Account/Manage/_Layout.cshtml]
+[C:/Users/ashlen_naidoo/OneDrive - FPT Group (PTY) LTD/Documents/GitHub/TruckBookingSystem/WarehouseReservationSystem/Areas/Identity/Pages/Account/Manage/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcX0xheW91dC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ashlen_naidoo/Downloads/TruckBookingSystem/WarehouseReservationSystem/Areas/Identity/Pages/Account/Manage/_ManageNav.cshtml]
+[C:/Users/ashlen_naidoo/OneDrive - FPT Group (PTY) LTD/Documents/GitHub/TruckBookingSystem/WarehouseReservationSystem/Areas/Identity/Pages/Account/Manage/_ManageNav.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcX01hbmFnZU5hdi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ashlen_naidoo/Downloads/TruckBookingSystem/WarehouseReservationSystem/Areas/Identity/Pages/Account/Manage/_StatusMessage.cshtml]
+[C:/Users/ashlen_naidoo/OneDrive - FPT Group (PTY) LTD/Documents/GitHub/TruckBookingSystem/WarehouseReservationSystem/Areas/Identity/Pages/Account/Manage/_StatusMessage.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcX1N0YXR1c01lc3NhZ2UuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ashlen_naidoo/Downloads/TruckBookingSystem/WarehouseReservationSystem/Areas/Identity/Pages/Account/Manage/_ViewImports.cshtml]
+[C:/Users/ashlen_naidoo/OneDrive - FPT Group (PTY) LTD/Documents/GitHub/TruckBookingSystem/WarehouseReservationSystem/Areas/Identity/Pages/Account/Manage/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ashlen_naidoo/Downloads/TruckBookingSystem/WarehouseReservationSystem/Areas/Identity/Pages/Account/Register.cshtml]
+[C:/Users/ashlen_naidoo/OneDrive - FPT Group (PTY) LTD/Documents/GitHub/TruckBookingSystem/WarehouseReservationSystem/Areas/Identity/Pages/Account/Register.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxSZWdpc3Rlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ashlen_naidoo/Downloads/TruckBookingSystem/WarehouseReservationSystem/Areas/Identity/Pages/Account/RegisterConfirmation.cshtml]
+[C:/Users/ashlen_naidoo/OneDrive - FPT Group (PTY) LTD/Documents/GitHub/TruckBookingSystem/WarehouseReservationSystem/Areas/Identity/Pages/Account/RegisterConfirmation.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxSZWdpc3RlckNvbmZpcm1hdGlvbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ashlen_naidoo/Downloads/TruckBookingSystem/WarehouseReservationSystem/Areas/Identity/Pages/Account/ResendEmailConfirmation.cshtml]
+[C:/Users/ashlen_naidoo/OneDrive - FPT Group (PTY) LTD/Documents/GitHub/TruckBookingSystem/WarehouseReservationSystem/Areas/Identity/Pages/Account/ResendEmailConfirmation.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxSZXNlbmRFbWFpbENvbmZpcm1hdGlvbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ashlen_naidoo/Downloads/TruckBookingSystem/WarehouseReservationSystem/Areas/Identity/Pages/Account/ResetPassword.cshtml]
+[C:/Users/ashlen_naidoo/OneDrive - FPT Group (PTY) LTD/Documents/GitHub/TruckBookingSystem/WarehouseReservationSystem/Areas/Identity/Pages/Account/ResetPassword.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxSZXNldFBhc3N3b3JkLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ashlen_naidoo/Downloads/TruckBookingSystem/WarehouseReservationSystem/Areas/Identity/Pages/Account/ResetPasswordConfirmation.cshtml]
+[C:/Users/ashlen_naidoo/OneDrive - FPT Group (PTY) LTD/Documents/GitHub/TruckBookingSystem/WarehouseReservationSystem/Areas/Identity/Pages/Account/ResetPasswordConfirmation.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxSZXNldFBhc3N3b3JkQ29uZmlybWF0aW9uLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ashlen_naidoo/Downloads/TruckBookingSystem/WarehouseReservationSystem/Areas/Identity/Pages/Account/_StatusMessage.cshtml]
+[C:/Users/ashlen_naidoo/OneDrive - FPT Group (PTY) LTD/Documents/GitHub/TruckBookingSystem/WarehouseReservationSystem/Areas/Identity/Pages/Account/_StatusMessage.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxfU3RhdHVzTWVzc2FnZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ashlen_naidoo/Downloads/TruckBookingSystem/WarehouseReservationSystem/Areas/Identity/Pages/Account/_ViewImports.cshtml]
+[C:/Users/ashlen_naidoo/OneDrive - FPT Group (PTY) LTD/Documents/GitHub/TruckBookingSystem/WarehouseReservationSystem/Areas/Identity/Pages/Account/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxfVmlld0ltcG9ydHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ashlen_naidoo/Downloads/TruckBookingSystem/WarehouseReservationSystem/Areas/Identity/Pages/Error.cshtml]
+[C:/Users/ashlen_naidoo/OneDrive - FPT Group (PTY) LTD/Documents/GitHub/TruckBookingSystem/WarehouseReservationSystem/Areas/Identity/Pages/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcRXJyb3IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ashlen_naidoo/Downloads/TruckBookingSystem/WarehouseReservationSystem/Areas/Identity/Pages/_ValidationScriptsPartial.cshtml]
+[C:/Users/ashlen_naidoo/OneDrive - FPT Group (PTY) LTD/Documents/GitHub/TruckBookingSystem/WarehouseReservationSystem/Areas/Identity/Pages/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZhbGlkYXRpb25TY3JpcHRzUGFydGlhbC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ashlen_naidoo/Downloads/TruckBookingSystem/WarehouseReservationSystem/Areas/Identity/Pages/_ViewImports.cshtml]
+[C:/Users/ashlen_naidoo/OneDrive - FPT Group (PTY) LTD/Documents/GitHub/TruckBookingSystem/WarehouseReservationSystem/Areas/Identity/Pages/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ashlen_naidoo/Downloads/TruckBookingSystem/WarehouseReservationSystem/Areas/Identity/Pages/_ViewStart.cshtml]
+[C:/Users/ashlen_naidoo/OneDrive - FPT Group (PTY) LTD/Documents/GitHub/TruckBookingSystem/WarehouseReservationSystem/Areas/Identity/Pages/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ashlen_naidoo/Downloads/TruckBookingSystem/WarehouseReservationSystem/Areas/Selection/Views/Home/About.cshtml]
+[C:/Users/ashlen_naidoo/OneDrive - FPT Group (PTY) LTD/Documents/GitHub/TruckBookingSystem/WarehouseReservationSystem/Areas/Selection/Views/Home/About.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcU2VsZWN0aW9uXFZpZXdzXEhvbWVcQWJvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ashlen_naidoo/Downloads/TruckBookingSystem/WarehouseReservationSystem/Areas/Selection/Views/Home/ContactUs.cshtml]
+[C:/Users/ashlen_naidoo/OneDrive - FPT Group (PTY) LTD/Documents/GitHub/TruckBookingSystem/WarehouseReservationSystem/Areas/Selection/Views/Home/ContactUs.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcU2VsZWN0aW9uXFZpZXdzXEhvbWVcQ29udGFjdFVzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ashlen_naidoo/Downloads/TruckBookingSystem/WarehouseReservationSystem/Areas/Selection/Views/Home/Index.cshtml]
+[C:/Users/ashlen_naidoo/OneDrive - FPT Group (PTY) LTD/Documents/GitHub/TruckBookingSystem/WarehouseReservationSystem/Areas/Selection/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcU2VsZWN0aW9uXFZpZXdzXEhvbWVcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ashlen_naidoo/Downloads/TruckBookingSystem/WarehouseReservationSystem/Areas/Selection/Views/_ViewImports.cshtml]
+[C:/Users/ashlen_naidoo/OneDrive - FPT Group (PTY) LTD/Documents/GitHub/TruckBookingSystem/WarehouseReservationSystem/Areas/Selection/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcU2VsZWN0aW9uXFZpZXdzXF9WaWV3SW1wb3J0cy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ashlen_naidoo/Downloads/TruckBookingSystem/WarehouseReservationSystem/Areas/Selection/Views/_ViewStart.cshtml]
+[C:/Users/ashlen_naidoo/OneDrive - FPT Group (PTY) LTD/Documents/GitHub/TruckBookingSystem/WarehouseReservationSystem/Areas/Selection/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcU2VsZWN0aW9uXFZpZXdzXF9WaWV3U3RhcnQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ashlen_naidoo/Downloads/TruckBookingSystem/WarehouseReservationSystem/Views/Shared/Error.cshtml]
+[C:/Users/ashlen_naidoo/OneDrive - FPT Group (PTY) LTD/Documents/GitHub/TruckBookingSystem/WarehouseReservationSystem/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ashlen_naidoo/Downloads/TruckBookingSystem/WarehouseReservationSystem/Views/Shared/GCLayout/_Footer.cshtml]
+[C:/Users/ashlen_naidoo/OneDrive - FPT Group (PTY) LTD/Documents/GitHub/TruckBookingSystem/WarehouseReservationSystem/Views/Shared/GCLayout/_Footer.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEdDTGF5b3V0XF9Gb290ZXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ashlen_naidoo/Downloads/TruckBookingSystem/WarehouseReservationSystem/Views/Shared/GCLayout/_Layout.cshtml]
+[C:/Users/ashlen_naidoo/OneDrive - FPT Group (PTY) LTD/Documents/GitHub/TruckBookingSystem/WarehouseReservationSystem/Views/Shared/GCLayout/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEdDTGF5b3V0XF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ashlen_naidoo/Downloads/TruckBookingSystem/WarehouseReservationSystem/Views/Shared/GCLayout/_MainNavigation.cshtml]
+[C:/Users/ashlen_naidoo/OneDrive - FPT Group (PTY) LTD/Documents/GitHub/TruckBookingSystem/WarehouseReservationSystem/Views/Shared/GCLayout/_MainNavigation.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEdDTGF5b3V0XF9NYWluTmF2aWdhdGlvbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ashlen_naidoo/Downloads/TruckBookingSystem/WarehouseReservationSystem/Views/Shared/GCLayout/_Scripts.cshtml]
+[C:/Users/ashlen_naidoo/OneDrive - FPT Group (PTY) LTD/Documents/GitHub/TruckBookingSystem/WarehouseReservationSystem/Views/Shared/GCLayout/_Scripts.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEdDTGF5b3V0XF9TY3JpcHRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ashlen_naidoo/Downloads/TruckBookingSystem/WarehouseReservationSystem/Views/Shared/GCLayout/_Styles.cshtml]
+[C:/Users/ashlen_naidoo/OneDrive - FPT Group (PTY) LTD/Documents/GitHub/TruckBookingSystem/WarehouseReservationSystem/Views/Shared/GCLayout/_Styles.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEdDTGF5b3V0XF9TdHlsZXMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ashlen_naidoo/Downloads/TruckBookingSystem/WarehouseReservationSystem/Views/Shared/GCLayout/_TopNavigation.cshtml]
+[C:/Users/ashlen_naidoo/OneDrive - FPT Group (PTY) LTD/Documents/GitHub/TruckBookingSystem/WarehouseReservationSystem/Views/Shared/GCLayout/_TopNavigation.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEdDTGF5b3V0XF9Ub3BOYXZpZ2F0aW9uLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ashlen_naidoo/Downloads/TruckBookingSystem/WarehouseReservationSystem/Views/Shared/NewLayout/_Footer.cshtml]
+[C:/Users/ashlen_naidoo/OneDrive - FPT Group (PTY) LTD/Documents/GitHub/TruckBookingSystem/WarehouseReservationSystem/Views/Shared/NewLayout/_Footer.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXE5ld0xheW91dFxfRm9vdGVyLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ashlen_naidoo/Downloads/TruckBookingSystem/WarehouseReservationSystem/Views/Shared/NewLayout/_Layout.cshtml]
+[C:/Users/ashlen_naidoo/OneDrive - FPT Group (PTY) LTD/Documents/GitHub/TruckBookingSystem/WarehouseReservationSystem/Views/Shared/NewLayout/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXE5ld0xheW91dFxfTGF5b3V0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ashlen_naidoo/Downloads/TruckBookingSystem/WarehouseReservationSystem/Views/Shared/NewLayout/_MainNavigation.cshtml]
+[C:/Users/ashlen_naidoo/OneDrive - FPT Group (PTY) LTD/Documents/GitHub/TruckBookingSystem/WarehouseReservationSystem/Views/Shared/NewLayout/_MainNavigation.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXE5ld0xheW91dFxfTWFpbk5hdmlnYXRpb24uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ashlen_naidoo/Downloads/TruckBookingSystem/WarehouseReservationSystem/Views/Shared/NewLayout/_Scripts.cshtml]
+[C:/Users/ashlen_naidoo/OneDrive - FPT Group (PTY) LTD/Documents/GitHub/TruckBookingSystem/WarehouseReservationSystem/Views/Shared/NewLayout/_Scripts.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXE5ld0xheW91dFxfU2NyaXB0cy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ashlen_naidoo/Downloads/TruckBookingSystem/WarehouseReservationSystem/Views/Shared/NewLayout/_Styles.cshtml]
+[C:/Users/ashlen_naidoo/OneDrive - FPT Group (PTY) LTD/Documents/GitHub/TruckBookingSystem/WarehouseReservationSystem/Views/Shared/NewLayout/_Styles.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXE5ld0xheW91dFxfU3R5bGVzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ashlen_naidoo/Downloads/TruckBookingSystem/WarehouseReservationSystem/Views/Shared/NewLayout/_TopNavigation.cshtml]
+[C:/Users/ashlen_naidoo/OneDrive - FPT Group (PTY) LTD/Documents/GitHub/TruckBookingSystem/WarehouseReservationSystem/Views/Shared/NewLayout/_TopNavigation.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXE5ld0xheW91dFxfVG9wTmF2aWdhdGlvbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ashlen_naidoo/Downloads/TruckBookingSystem/WarehouseReservationSystem/Views/Shared/_Layout.cshtml]
+[C:/Users/ashlen_naidoo/OneDrive - FPT Group (PTY) LTD/Documents/GitHub/TruckBookingSystem/WarehouseReservationSystem/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ashlen_naidoo/Downloads/TruckBookingSystem/WarehouseReservationSystem/Views/Shared/_LoginPartial.cshtml]
+[C:/Users/ashlen_naidoo/OneDrive - FPT Group (PTY) LTD/Documents/GitHub/TruckBookingSystem/WarehouseReservationSystem/Views/Shared/_LoginPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Mb2dpblBhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ashlen_naidoo/Downloads/TruckBookingSystem/WarehouseReservationSystem/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/ashlen_naidoo/OneDrive - FPT Group (PTY) LTD/Documents/GitHub/TruckBookingSystem/WarehouseReservationSystem/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ashlen_naidoo/Downloads/TruckBookingSystem/WarehouseReservationSystem/Views/_ViewImports.cshtml]
+[C:/Users/ashlen_naidoo/OneDrive - FPT Group (PTY) LTD/Documents/GitHub/TruckBookingSystem/WarehouseReservationSystem/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ashlen_naidoo/Downloads/TruckBookingSystem/WarehouseReservationSystem/Views/_ViewStart.cshtml]
+[C:/Users/ashlen_naidoo/OneDrive - FPT Group (PTY) LTD/Documents/GitHub/TruckBookingSystem/WarehouseReservationSystem/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 

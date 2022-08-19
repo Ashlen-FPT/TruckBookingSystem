@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ashlen_naidoo\\Downloads\\TruckBookingSystem\\WarehouseReservationSystem\\WarehouseReservationSystem.csproj": {}
+    "C:\\Users\\ashlen_naidoo\\OneDrive - FPT Group (PTY) LTD\\Documents\\GitHub\\TruckBookingSystem\\WarehouseReservationSystem\\WarehouseReservationSystem.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ashlen_naidoo\\Downloads\\TruckBookingSystem\\WarehouseReservationSystem.DataAccess\\WarehouseReservationSystem.DataAccess.csproj": {
+    "C:\\Users\\ashlen_naidoo\\OneDrive - FPT Group (PTY) LTD\\Documents\\GitHub\\TruckBookingSystem\\WarehouseReservationSystem.DataAccess\\WarehouseReservationSystem.DataAccess.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ashlen_naidoo\\Downloads\\TruckBookingSystem\\WarehouseReservationSystem.DataAccess\\WarehouseReservationSystem.DataAccess.csproj",
+        "projectUniqueName": "C:\\Users\\ashlen_naidoo\\OneDrive - FPT Group (PTY) LTD\\Documents\\GitHub\\TruckBookingSystem\\WarehouseReservationSystem.DataAccess\\WarehouseReservationSystem.DataAccess.csproj",
         "projectName": "WarehouseReservationSystem.DataAccess",
-        "projectPath": "C:\\Users\\ashlen_naidoo\\Downloads\\TruckBookingSystem\\WarehouseReservationSystem.DataAccess\\WarehouseReservationSystem.DataAccess.csproj",
+        "projectPath": "C:\\Users\\ashlen_naidoo\\OneDrive - FPT Group (PTY) LTD\\Documents\\GitHub\\TruckBookingSystem\\WarehouseReservationSystem.DataAccess\\WarehouseReservationSystem.DataAccess.csproj",
         "packagesPath": "C:\\Users\\ashlen_naidoo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ashlen_naidoo\\Downloads\\TruckBookingSystem\\WarehouseReservationSystem.DataAccess\\obj\\",
+        "outputPath": "C:\\Users\\ashlen_naidoo\\OneDrive - FPT Group (PTY) LTD\\Documents\\GitHub\\TruckBookingSystem\\WarehouseReservationSystem.DataAccess\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -34,11 +34,11 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\ashlen_naidoo\\Downloads\\TruckBookingSystem\\WarehouseReservationSystem.Models\\WarehouseReservationSystem.Models.csproj": {
-                "projectPath": "C:\\Users\\ashlen_naidoo\\Downloads\\TruckBookingSystem\\WarehouseReservationSystem.Models\\WarehouseReservationSystem.Models.csproj"
+              "C:\\Users\\ashlen_naidoo\\OneDrive - FPT Group (PTY) LTD\\Documents\\GitHub\\TruckBookingSystem\\WarehouseReservationSystem.Models\\WarehouseReservationSystem.Models.csproj": {
+                "projectPath": "C:\\Users\\ashlen_naidoo\\OneDrive - FPT Group (PTY) LTD\\Documents\\GitHub\\TruckBookingSystem\\WarehouseReservationSystem.Models\\WarehouseReservationSystem.Models.csproj"
               },
-              "C:\\Users\\ashlen_naidoo\\Downloads\\TruckBookingSystem\\WarehouseReservationSystem.Utility\\WarehouseReservationSystem.Utility.csproj": {
-                "projectPath": "C:\\Users\\ashlen_naidoo\\Downloads\\TruckBookingSystem\\WarehouseReservationSystem.Utility\\WarehouseReservationSystem.Utility.csproj"
+              "C:\\Users\\ashlen_naidoo\\OneDrive - FPT Group (PTY) LTD\\Documents\\GitHub\\TruckBookingSystem\\WarehouseReservationSystem.Utility\\WarehouseReservationSystem.Utility.csproj": {
+                "projectPath": "C:\\Users\\ashlen_naidoo\\OneDrive - FPT Group (PTY) LTD\\Documents\\GitHub\\TruckBookingSystem\\WarehouseReservationSystem.Utility\\WarehouseReservationSystem.Utility.csproj"
               }
             }
           }
@@ -94,14 +94,14 @@
         }
       }
     },
-    "C:\\Users\\ashlen_naidoo\\Downloads\\TruckBookingSystem\\WarehouseReservationSystem.Models\\WarehouseReservationSystem.Models.csproj": {
+    "C:\\Users\\ashlen_naidoo\\OneDrive - FPT Group (PTY) LTD\\Documents\\GitHub\\TruckBookingSystem\\WarehouseReservationSystem.Models\\WarehouseReservationSystem.Models.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ashlen_naidoo\\Downloads\\TruckBookingSystem\\WarehouseReservationSystem.Models\\WarehouseReservationSystem.Models.csproj",
+        "projectUniqueName": "C:\\Users\\ashlen_naidoo\\OneDrive - FPT Group (PTY) LTD\\Documents\\GitHub\\TruckBookingSystem\\WarehouseReservationSystem.Models\\WarehouseReservationSystem.Models.csproj",
         "projectName": "WarehouseReservationSystem.Models",
-        "projectPath": "C:\\Users\\ashlen_naidoo\\Downloads\\TruckBookingSystem\\WarehouseReservationSystem.Models\\WarehouseReservationSystem.Models.csproj",
+        "projectPath": "C:\\Users\\ashlen_naidoo\\OneDrive - FPT Group (PTY) LTD\\Documents\\GitHub\\TruckBookingSystem\\WarehouseReservationSystem.Models\\WarehouseReservationSystem.Models.csproj",
         "packagesPath": "C:\\Users\\ashlen_naidoo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ashlen_naidoo\\Downloads\\TruckBookingSystem\\WarehouseReservationSystem.Models\\obj\\",
+        "outputPath": "C:\\Users\\ashlen_naidoo\\OneDrive - FPT Group (PTY) LTD\\Documents\\GitHub\\TruckBookingSystem\\WarehouseReservationSystem.Models\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -173,14 +173,14 @@
         }
       }
     },
-    "C:\\Users\\ashlen_naidoo\\Downloads\\TruckBookingSystem\\WarehouseReservationSystem.Utility\\WarehouseReservationSystem.Utility.csproj": {
+    "C:\\Users\\ashlen_naidoo\\OneDrive - FPT Group (PTY) LTD\\Documents\\GitHub\\TruckBookingSystem\\WarehouseReservationSystem.Utility\\WarehouseReservationSystem.Utility.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ashlen_naidoo\\Downloads\\TruckBookingSystem\\WarehouseReservationSystem.Utility\\WarehouseReservationSystem.Utility.csproj",
+        "projectUniqueName": "C:\\Users\\ashlen_naidoo\\OneDrive - FPT Group (PTY) LTD\\Documents\\GitHub\\TruckBookingSystem\\WarehouseReservationSystem.Utility\\WarehouseReservationSystem.Utility.csproj",
         "projectName": "WarehouseReservationSystem.Utility",
-        "projectPath": "C:\\Users\\ashlen_naidoo\\Downloads\\TruckBookingSystem\\WarehouseReservationSystem.Utility\\WarehouseReservationSystem.Utility.csproj",
+        "projectPath": "C:\\Users\\ashlen_naidoo\\OneDrive - FPT Group (PTY) LTD\\Documents\\GitHub\\TruckBookingSystem\\WarehouseReservationSystem.Utility\\WarehouseReservationSystem.Utility.csproj",
         "packagesPath": "C:\\Users\\ashlen_naidoo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ashlen_naidoo\\Downloads\\TruckBookingSystem\\WarehouseReservationSystem.Utility\\obj\\",
+        "outputPath": "C:\\Users\\ashlen_naidoo\\OneDrive - FPT Group (PTY) LTD\\Documents\\GitHub\\TruckBookingSystem\\WarehouseReservationSystem.Utility\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -203,8 +203,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\ashlen_naidoo\\Downloads\\TruckBookingSystem\\WarehouseReservationSystem.Models\\WarehouseReservationSystem.Models.csproj": {
-                "projectPath": "C:\\Users\\ashlen_naidoo\\Downloads\\TruckBookingSystem\\WarehouseReservationSystem.Models\\WarehouseReservationSystem.Models.csproj"
+              "C:\\Users\\ashlen_naidoo\\OneDrive - FPT Group (PTY) LTD\\Documents\\GitHub\\TruckBookingSystem\\WarehouseReservationSystem.Models\\WarehouseReservationSystem.Models.csproj": {
+                "projectPath": "C:\\Users\\ashlen_naidoo\\OneDrive - FPT Group (PTY) LTD\\Documents\\GitHub\\TruckBookingSystem\\WarehouseReservationSystem.Models\\WarehouseReservationSystem.Models.csproj"
               }
             }
           }
@@ -260,14 +260,14 @@
         }
       }
     },
-    "C:\\Users\\ashlen_naidoo\\Downloads\\TruckBookingSystem\\WarehouseReservationSystem\\WarehouseReservationSystem.csproj": {
+    "C:\\Users\\ashlen_naidoo\\OneDrive - FPT Group (PTY) LTD\\Documents\\GitHub\\TruckBookingSystem\\WarehouseReservationSystem\\WarehouseReservationSystem.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ashlen_naidoo\\Downloads\\TruckBookingSystem\\WarehouseReservationSystem\\WarehouseReservationSystem.csproj",
+        "projectUniqueName": "C:\\Users\\ashlen_naidoo\\OneDrive - FPT Group (PTY) LTD\\Documents\\GitHub\\TruckBookingSystem\\WarehouseReservationSystem\\WarehouseReservationSystem.csproj",
         "projectName": "WarehouseReservationSystem",
-        "projectPath": "C:\\Users\\ashlen_naidoo\\Downloads\\TruckBookingSystem\\WarehouseReservationSystem\\WarehouseReservationSystem.csproj",
+        "projectPath": "C:\\Users\\ashlen_naidoo\\OneDrive - FPT Group (PTY) LTD\\Documents\\GitHub\\TruckBookingSystem\\WarehouseReservationSystem\\WarehouseReservationSystem.csproj",
         "packagesPath": "C:\\Users\\ashlen_naidoo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ashlen_naidoo\\Downloads\\TruckBookingSystem\\WarehouseReservationSystem\\obj\\",
+        "outputPath": "C:\\Users\\ashlen_naidoo\\OneDrive - FPT Group (PTY) LTD\\Documents\\GitHub\\TruckBookingSystem\\WarehouseReservationSystem\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -290,14 +290,14 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\ashlen_naidoo\\Downloads\\TruckBookingSystem\\WarehouseReservationSystem.DataAccess\\WarehouseReservationSystem.DataAccess.csproj": {
-                "projectPath": "C:\\Users\\ashlen_naidoo\\Downloads\\TruckBookingSystem\\WarehouseReservationSystem.DataAccess\\WarehouseReservationSystem.DataAccess.csproj"
+              "C:\\Users\\ashlen_naidoo\\OneDrive - FPT Group (PTY) LTD\\Documents\\GitHub\\TruckBookingSystem\\WarehouseReservationSystem.DataAccess\\WarehouseReservationSystem.DataAccess.csproj": {
+                "projectPath": "C:\\Users\\ashlen_naidoo\\OneDrive - FPT Group (PTY) LTD\\Documents\\GitHub\\TruckBookingSystem\\WarehouseReservationSystem.DataAccess\\WarehouseReservationSystem.DataAccess.csproj"
               },
-              "C:\\Users\\ashlen_naidoo\\Downloads\\TruckBookingSystem\\WarehouseReservationSystem.Models\\WarehouseReservationSystem.Models.csproj": {
-                "projectPath": "C:\\Users\\ashlen_naidoo\\Downloads\\TruckBookingSystem\\WarehouseReservationSystem.Models\\WarehouseReservationSystem.Models.csproj"
+              "C:\\Users\\ashlen_naidoo\\OneDrive - FPT Group (PTY) LTD\\Documents\\GitHub\\TruckBookingSystem\\WarehouseReservationSystem.Models\\WarehouseReservationSystem.Models.csproj": {
+                "projectPath": "C:\\Users\\ashlen_naidoo\\OneDrive - FPT Group (PTY) LTD\\Documents\\GitHub\\TruckBookingSystem\\WarehouseReservationSystem.Models\\WarehouseReservationSystem.Models.csproj"
               },
-              "C:\\Users\\ashlen_naidoo\\Downloads\\TruckBookingSystem\\WarehouseReservationSystem.Utility\\WarehouseReservationSystem.Utility.csproj": {
-                "projectPath": "C:\\Users\\ashlen_naidoo\\Downloads\\TruckBookingSystem\\WarehouseReservationSystem.Utility\\WarehouseReservationSystem.Utility.csproj"
+              "C:\\Users\\ashlen_naidoo\\OneDrive - FPT Group (PTY) LTD\\Documents\\GitHub\\TruckBookingSystem\\WarehouseReservationSystem.Utility\\WarehouseReservationSystem.Utility.csproj": {
+                "projectPath": "C:\\Users\\ashlen_naidoo\\OneDrive - FPT Group (PTY) LTD\\Documents\\GitHub\\TruckBookingSystem\\WarehouseReservationSystem.Utility\\WarehouseReservationSystem.Utility.csproj"
               }
             }
           }
