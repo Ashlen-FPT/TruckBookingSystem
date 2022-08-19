@@ -15,3 +15,20 @@ C:\Users\ashlen_naidoo\Downloads\TruckBookingSystem\WarehouseReservationSystem.D
 C:\Users\ashlen_naidoo\Downloads\TruckBookingSystem\WarehouseReservationSystem.DataAccess\obj\Debug\net6.0\refint\WarehouseReservationSystem.DataAccess.dll
 C:\Users\ashlen_naidoo\Downloads\TruckBookingSystem\WarehouseReservationSystem.DataAccess\obj\Debug\net6.0\WarehouseReservationSystem.DataAccess.pdb
 C:\Users\ashlen_naidoo\Downloads\TruckBookingSystem\WarehouseReservationSystem.DataAccess\obj\Debug\net6.0\ref\WarehouseReservationSystem.DataAccess.dll
+C:\Users\ashlen_naidoo\OneDrive - FPT Group (PTY) LTD\Documents\GitHub\TruckBookingSystem\WarehouseReservationSystem.DataAccess\bin\Debug\net6.0\WarehouseReservationSystem.DataAccess.deps.json
+C:\Users\ashlen_naidoo\OneDrive - FPT Group (PTY) LTD\Documents\GitHub\TruckBookingSystem\WarehouseReservationSystem.DataAccess\bin\Debug\net6.0\WarehouseReservationSystem.DataAccess.dll
+C:\Users\ashlen_naidoo\OneDrive - FPT Group (PTY) LTD\Documents\GitHub\TruckBookingSystem\WarehouseReservationSystem.DataAccess\bin\Debug\net6.0\WarehouseReservationSystem.DataAccess.pdb
+C:\Users\ashlen_naidoo\OneDrive - FPT Group (PTY) LTD\Documents\GitHub\TruckBookingSystem\WarehouseReservationSystem.DataAccess\bin\Debug\net6.0\WarehouseReservationSystem.Models.dll
+C:\Users\ashlen_naidoo\OneDrive - FPT Group (PTY) LTD\Documents\GitHub\TruckBookingSystem\WarehouseReservationSystem.DataAccess\bin\Debug\net6.0\WarehouseReservationSystem.Utility.dll
+C:\Users\ashlen_naidoo\OneDrive - FPT Group (PTY) LTD\Documents\GitHub\TruckBookingSystem\WarehouseReservationSystem.DataAccess\bin\Debug\net6.0\WarehouseReservationSystem.Models.pdb
+C:\Users\ashlen_naidoo\OneDrive - FPT Group (PTY) LTD\Documents\GitHub\TruckBookingSystem\WarehouseReservationSystem.DataAccess\bin\Debug\net6.0\WarehouseReservationSystem.Utility.pdb
+C:\Users\ashlen_naidoo\OneDrive - FPT Group (PTY) LTD\Documents\GitHub\TruckBookingSystem\WarehouseReservationSystem.DataAccess\obj\Debug\net6.0\WarehouseReservationSystem.DataAccess.csproj.AssemblyReference.cache
+C:\Users\ashlen_naidoo\OneDrive - FPT Group (PTY) LTD\Documents\GitHub\TruckBookingSystem\WarehouseReservationSystem.DataAccess\obj\Debug\net6.0\WarehouseReservationSystem.DataAccess.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ashlen_naidoo\OneDrive - FPT Group (PTY) LTD\Documents\GitHub\TruckBookingSystem\WarehouseReservationSystem.DataAccess\obj\Debug\net6.0\WarehouseReservationSystem.DataAccess.AssemblyInfoInputs.cache
+C:\Users\ashlen_naidoo\OneDrive - FPT Group (PTY) LTD\Documents\GitHub\TruckBookingSystem\WarehouseReservationSystem.DataAccess\obj\Debug\net6.0\WarehouseReservationSystem.DataAccess.AssemblyInfo.cs
+C:\Users\ashlen_naidoo\OneDrive - FPT Group (PTY) LTD\Documents\GitHub\TruckBookingSystem\WarehouseReservationSystem.DataAccess\obj\Debug\net6.0\WarehouseReservationSystem.DataAccess.csproj.CoreCompileInputs.cache
+C:\Users\ashlen_naidoo\OneDrive - FPT Group (PTY) LTD\Documents\GitHub\TruckBookingSystem\WarehouseReservationSystem.DataAccess\obj\Debug\net6.0\WarehouseReservationSystem.DataAccess.csproj.CopyComplete
+C:\Users\ashlen_naidoo\OneDrive - FPT Group (PTY) LTD\Documents\GitHub\TruckBookingSystem\WarehouseReservationSystem.DataAccess\obj\Debug\net6.0\WarehouseReservationSystem.DataAccess.dll
+C:\Users\ashlen_naidoo\OneDrive - FPT Group (PTY) LTD\Documents\GitHub\TruckBookingSystem\WarehouseReservationSystem.DataAccess\obj\Debug\net6.0\refint\WarehouseReservationSystem.DataAccess.dll
+C:\Users\ashlen_naidoo\OneDrive - FPT Group (PTY) LTD\Documents\GitHub\TruckBookingSystem\WarehouseReservationSystem.DataAccess\obj\Debug\net6.0\WarehouseReservationSystem.DataAccess.pdb
+C:\Users\ashlen_naidoo\OneDrive - FPT Group (PTY) LTD\Documents\GitHub\TruckBookingSystem\WarehouseReservationSystem.DataAccess\obj\Debug\net6.0\ref\WarehouseReservationSystem.DataAccess.dll

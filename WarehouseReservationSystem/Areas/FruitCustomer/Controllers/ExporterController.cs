@@ -17,8 +17,8 @@ namespace WarehouseReservationSystem.Areas.FruitCustomer.Controllers
     public class ExporterController : Controller
     {
         private readonly ApplicationDbContext _context;
-        private IHostingEnvironment _env;
-        public ExporterController(ApplicationDbContext context, IHostingEnvironment env)
+        private IWebHostEnvironment _env;
+        public ExporterController(ApplicationDbContext context, IWebHostEnvironment env)
         {
             _context = context;
             _env = env;
