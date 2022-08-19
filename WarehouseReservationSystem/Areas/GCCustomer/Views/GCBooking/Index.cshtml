@@ -1,0 +1,120 @@
+﻿@model IEnumerable<WarehouseReservationSystem.Models.GC.GCBooking>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/GCLayout/_Layout.cshtml";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.BookingRef)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Date)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Warehouse)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Vessel)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Exporter)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Transporter)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Registration)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TrailerReg)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Import)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Export)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PhoneNumber)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Email)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Time)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Status)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CreatedDateUtc)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.BookingRef)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Date)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Warehouse.LocationId)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Vessel.Id)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Exporter.KeyCode)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Transporter.KeyCode)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Registration)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TrailerReg)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Import)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Export)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PhoneNumber)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Email)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Time)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Status)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CreatedDateUtc)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

@@ -1,0 +1,1175 @@
+﻿@model WarehouseReservationSystem.Models.GC.GCBooking
+@using WarehouseReservationSystem.Utility
+@using Microsoft.AspNetCore.Identity
+@using WarehouseReservationSystem.Areas.Identity
+@inject SignInManager<IdentityUser> SignInManager
+@inject UserManager<IdentityUser> UserManager
+
+@{
+    ViewData["Title"] = "Create";
+    Layout = "~/Views/Shared/GCLayout/_Layout.cshtml";
+}
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css" />
+<link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+<link rel="stylesheet"
+      href="https://unpkg.com/tippy.js@6/animations/scale.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/icheck-bootstrap/3.0.1/icheck-bootstrap.min.css" integrity="sha512-8vq2g5nHE062j3xor4XxPeZiPjmRDh6wlufQlfC6pdQ/9urJkU07NM0tEREeymP++NczacJ/Q59ul+/K2eYvcg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+<style>
+
+    ::-webkit-scrollbar {
+        width: 10px;
+     
+    }
+
+    /* Track */
+    ::-webkit-scrollbar-track {
+        background: #e0e0e0;
+
+    }
+
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+        background: #888;
+        border-radius: 25px 25px;
+    }
+
+        /* Handle on hover */
+        ::-webkit-scrollbar-thumb:hover {
+            background: #555;
+        }
+
+    table {
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+    th, td {
+        text-align: left;
+        height: 15px;
+        padding: 8px;
+    }
+
+    tr:nth-child(even) {
+        background-color: #f2f2f2;
+    }
+
+    @@import 'tippy.js/animations/scale.css';
+
+    .tippy-box[data-inertia][data-state='visible'] {
+        transition-timing-function: cubic-bezier(...);
+        border-radius: 10px 10px;
+        padding: 15px 0 0 0;
+    }
+
+    .row__seat {
+        width: 40px;
+        height: 40px;
+        background: rgba(72, 72, 78, 0.5);
+        margin: 3px;
+        border-radius: 3px;
+        cursor: pointer;
+        line-height: 50px;
+        text-align: center;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    }
+
+    @@media screen and (max-width: 2753px) {
+
+        #TimeContainer p {
+            font-size: 25px;
+        }
+    }
+
+    @@media screen and (max-width: 1857px) {
+        .row__seat {
+            width: 30px;
+            height: 50px;
+            line-height: 40px;
+            font-size: 15px;
+        }
+    }
+
+    @@media screen and (max-width: 1615px) {
+        .row__seat {
+            width: 25px;
+            height: 45px;
+            font-size: 12px;
+        }
+    }
+
+    @@media screen and (max-width: 1369px) {
+        .row__seat {
+            width: 20px;
+            height: 35px;
+            font-size: 8px;
+            line-height: 45px;
+        }
+    }
+
+    @@media screen and (max-width: 1185px) {
+        .row__seat {
+            width: 15px;
+            height: 15px;
+            font-size: 0px;
+        }
+    }
+
+    @@media screen and (max-width: 1064px) {
+        .row__seat {
+            width: 20px;
+            height: 20px;
+            font-size: 0px;
+        }
+    }
+
+    @@media screen and (max-width: 631px) {
+        .row__seat {
+            width: 10px;
+            height: 10px;
+            margin: 2px;
+            font-size: 0px;
+        }
+
+        #TimeContainer p {
+            padding: 0 0 0 0;
+            font-size: 10px;
+        }
+    }
+
+    .row__seat:hover {
+        background: #8cc63e;
+    }
+
+    .row__seat--reserved,
+    .row__seat--reserved:hover {
+        background: #de6363;
+        cursor: default;
+    }
+
+    .row__seat--blocked,
+    .row__seat--blocked:hover {
+        background: #eda30a;
+        cursor: default;
+    }
+
+
+    .row__seat--reserved--access {
+        background: #1db2c9;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        transition: 0.3s;
+        border-radius: 5px;
+    }
+
+        .row__seat--reserved--access:hover {
+            background: #148c9f;
+            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.4);
+        }
+
+
+    .row__seat--reserved--ta {
+        background: #9370DB;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        transition: 0.3s;
+        border-radius: 5px;
+    }
+
+        .row__seat--reserved--ta:hover {
+            background: #7547d1;
+            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.4);
+        }
+
+    .row__seat--reserved--td {
+        background: #de6363;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        transition: 0.3s;
+        border-radius: 5px;
+    }
+
+        .row__seat--reserved--td:hover {
+            background: #d74242;
+            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.4);
+        }
+
+    .row__seat--reserved--gi {
+        background: #e8d84a;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        transition: 0.3s;
+        border-radius: 5px;
+    }
+
+        .row__seat--reserved--gi:hover {
+            background: #b5a517;
+            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.4);
+        }
+
+    .row__seat--reserved--go {
+        background: #2E8B57;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        transition: 0.3s;
+        border-radius: 5px;
+    }
+
+        .row__seat--reserved--go:hover {
+            background: #20603b;
+            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.4);
+        }
+
+
+    #TimeContainer p {
+        padding: 5px 15px 0 15px;
+    }
+
+    .row {
+        display: flex;
+        width: 100%;
+    }
+
+    .inner {
+        display: table;
+        margin: 0 auto;
+        width: 90%;
+    }
+
+    .outer {
+        width: 100%
+    }
+
+    /* Height fix for select2 */
+    .select2-container .select2-selection {
+        height: 38px;
+    }
+
+    .legend {
+        list-style: none;
+        margin: 1em 0 0 0;
+        padding: 0;
+        text-align: center;
+    }
+
+    .legend__item {
+        font-size: 1em;
+        font-weight: bold;
+        margin: 0 9px 0 0;
+        display: inline-block;
+    }
+
+        .legend__item::before {
+            content: '';
+            width: 15px;
+            height: 15px;
+            display: inline-block;
+            margin: 0 5px 0 0;
+            border-radius: 2px;
+            background: rgba(72, 72, 78, 0.5);
+        }
+
+    .legend__item--reserved::before {
+        background: #de6363;
+    }
+
+    .legend__item--own::before {
+        background: #1db2c9;
+    }
+
+    .legend__item--selected::before {
+        background: #8cc63e;
+    }
+
+    .legend__item--ta::before {
+        background: #9370DB;
+    }
+
+    .legend__item--td::before {
+        background: #de6363;
+    }
+
+    .legend__item--gi::before {
+        background: #e8d84a;
+    }
+
+    .legend__item--go::before {
+        background: #2E8B57;
+    }
+
+    .legend__item--blocked::before {
+        background: #eda30a;
+    }
+</style>
+
+
+<!-- Preloader -->
+<div class="preloader dark-mode flex-column justify-content-center align-items-center">
+    <img class="animation__wobble" src="~/Images/FPT.png" alt="AdminLTELogo" height="200" width="200">
+</div>
+
+<!-- Content Header (Page header) -->
+<div class="content-header">
+    <div class="container-fluid">
+        <div class="row mb-2">
+            <div class="col-sm-6">
+                <h1 class="m-0"> </h1>
+            </div><!-- /.col -->
+            <div class="col-sm-6">
+                <ol class="breadcrumb float-sm-right">
+                    <breadcrumb></breadcrumb>
+                </ol>
+            </div><!-- /.col -->
+        </div><!-- /.row -->
+    </div><!-- /.container-fluid -->
+</div>
+<!-- /.content-header -->
+<!-- Main content -->
+<div class="content">
+    <div class="container-fluid">
+
+
+        @if (User.IsInRole(SD.Role_User_Indi))
+        {
+            <div class="alert alert-info alert-dismissible">
+                <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
+                <h5><i class="icon fas fa-info"></i> Alert!</h5>
+                You're only allowed to Book on the dates that are two days from the present date!
+            </div>
+        }
+
+        @if (User.IsInRole(SD.Role_GateUser) || User.IsInRole(SD.Role_TruckStop))
+        {
+
+            <div class="row">
+                <div class="col-3" style="display: block; margin-right: auto; margin-left: auto;">
+
+                    <div class="form-group">
+                        <label asp-for="Date" class="control-label"></label>
+                        <input id="date" asp-for="Date" class="form-control" readonly onchange="loadSlots()" />
+                        <span asp-validation-for="Date" class="text-danger"></span>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="row">
+                <div class="col-3" style="display: block; margin-right: auto; margin-left: auto;">
+                    <div class="form-group">
+                        <label asp-for="WarehouseId" class="control-label"></label>
+                        <select id="warehouse" asp-for="WarehouseId" class="form-control" asp-items="ViewBag.WarehouseId" onchange="loadSlots()" style="pointer-events:none" readonly></select>
+                    </div>
+                </div>
+            </div>
+
+            <br />
+        }
+        else
+        {
+
+            <div class="row">
+                <div class="col-3" style="display: block; margin-right: auto; margin-left: auto;">
+
+                    <div class="form-group">
+                        <label asp-for="Date" class="control-label"></label>
+
+                        @{ if (User.IsInRole(SD.Role_Supervisor))
+                            {
+                                <input id="date" asp-for="Date" min="@DateTime.Now.ToString("yyyy-MM-dd")" class="form-control" onchange="loadSlots()" /> }
+                            else
+                            {
+                                <input id="date" asp-for="Date" class="form-control" min="@DateTime.Now.AddDays(1).ToString("yyyy-MM-dd")" max="@DateTime.Now.AddDays(2).ToString("yyyy-MM-dd")" onchange="loadSlots()" /> } }
+
+                        <span asp-validation-for="Date" class="text-danger"></span>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="row">
+                <div class="col-3" style="display: block; margin-right: auto; margin-left: auto;">
+                    <div class="form-group">
+                        <label asp-for="WarehouseId" class="control-label"></label>
+                        <select disabled id="warehouse" asp-for="WarehouseId" class="form-control" asp-items="ViewBag.WarehouseId" onchange="loadSlots()"></select>
+                    </div>
+                </div>
+            </div>
+
+
+
+        }
+
+
+        <ul class="legend">
+            <li class="legend__item legend__item--free">Free</li>
+            @if (User.IsInRole(SD.Role_User_Indi))
+            {
+                <li class="legend__item legend__item--reserved">Reserved</li>
+            }
+            @if (User.IsInRole(SD.Role_User_Indi))
+            {
+                <li class="legend__item legend__item--own">My Bookings</li>
+            }
+
+            @if (User.IsInRole(SD.Role_Supervisor))
+            {
+                <li class="legend__item legend__item--own">Unprocessed</li>
+                <li class="legend__item legend__item--gi">Gate In</li>
+                <li class="legend__item legend__item--go">Gate Out</li>
+
+
+
+            }
+
+            <li class="legend__item legend__item--blocked">Unavailable</li>
+
+
+
+
+        </ul>
+        <br />
+
+
+
+        <div class="outer">
+            <div class="inner" id="TimeContainer">
+
+            </div>
+
+        </div>
+
+        <br />
+        <br />
+        <br />
+
+    </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="staticBackdrop" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="staticBackdropLabel">Please provide the following details</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+
+
+                <form asp-action="Create">
+                    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+                    <input asp-for="Status" class="form-control" type="hidden" value="BOOKED" />
+
+                    <input id="bRef" asp-for="BookingRef" class="form-control" type="hidden" />
+
+                    <input id="dateTwo" asp-for="Date" class="form-control" type="hidden" />
+
+                    <input id="wTwo" asp-for="WarehouseId" type="hidden" />
+
+
+
+                    @{ ApplicationUser applicationUser = (ApplicationUser)await UserManager.GetUserAsync(User);
+                        string userContactNum = applicationUser?.PhoneNumber; }
+
+
+                    <div class="form-group">
+                        <label asp-for="VesselId" class="control-label"></label>
+                        <select asp-for="VesselId" class="form-control" asp-items="ViewBag.VesselId"></select>
+                    </div>
+                    <div class="form-group">
+                        <label>Customer</label>
+                        <div class="col-lg-12 col-md-9">
+                            <select asp-for="ExporterId" id="ExporterList" class="form-control " tabindex="0" style="width: 100%" asp-items="ViewBag.ExporterId"></select>
+                        </div>
+                        <span asp-validation-for="ExporterId" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="TransporterId" class="control-label"></label>
+                        <select asp-for="TransporterId" class="form-control" asp-items="ViewBag.TransporterId"></select>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Registration" class="control-label"></label>
+                        <input asp-for="Registration" onchange="InputChange()" class="form-control" onkeydown="upperCaseF(this)" />
+                        <span asp-validation-for="Registration" onchange="InputChange()" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="TrailerReg" class="control-label"></label>
+                        <input asp-for="TrailerReg" class="form-control" onkeydown="upperCaseF(this)" />
+                        <span asp-validation-for="TrailerReg" class="text-danger"></span>
+                    </div>
+
+                    <div class="icheck-info icheck-inline">
+                        <input required onchange="RadioBtn(this)" type="radio" id="Import" name="someGroupName" />
+                        <label for="Import">Import</label>
+                    </div>
+                    <div class="icheck-info icheck-inline">
+                        <input required onchange="RadioBtn(this)" type="radio" id="Export" name="someGroupName" />
+                        <label for="Export">Export</label>
+                    </div>
+
+                    <input class="form-check-input" id="import" asp-for="Import" type="hidden" />
+                    <input class="form-check-input" id="export" asp-for="Export" type="hidden" />
+
+                    
+
+                    <div style="margin-top:15px" class="form-group">
+                        <label asp-for="Quantity" class="control-label"></label>
+                        <input  asp-for="Quantity" class="form-control" />
+                        <span asp-validation-for="Quantity" class="text-danger"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label asp-for="Name" class="control-label"></label>
+                        <input  asp-for="Name" value="@applicationUser.FirstName" class="form-control" />
+                        <span asp-validation-for="Name" class="text-danger"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label asp-for="PhoneNumber" class="control-label"></label>
+                        <input readonly asp-for="PhoneNumber" value="@userContactNum" class="form-control" />
+                        <span asp-validation-for="PhoneNumber" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Email" class="control-label"></label>
+                        <input readonly asp-for="Email" value="@UserManager.GetUserName(User)" class="form-control" />
+                        <span asp-validation-for="Email" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Time" class="control-label"></label>
+                        <input readonly id="time" asp-for="Time" class="form-control" />
+                        <span asp-validation-for="Time" class="text-danger"></span>
+                    </div>
+
+
+
+                    <input type="submit" id="btn" class="btn btn-primary btn-block" />
+
+                </form>
+
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary btn-block" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<!-- DetailsModal -->
+<div class="modal fade" id="DetailsModal" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="staticBackdropLabel">Booking Details</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <table id="details">
+                    <tr>
+                        <th>
+                            @Html.DisplayNameFor(model => model.BookingRef)
+                        </th>
+                        <td id="BookingRef">
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>
+                            @Html.DisplayNameFor(model => model.Date)
+                        </th>
+                        <td id="Date">
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>
+                            @Html.DisplayNameFor(model => model.Transporter)
+                        </th>
+                        <td id="Transporter">
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>
+                            @Html.DisplayNameFor(model => model.Registration)
+                        </th>
+                        <td id="Registration2">
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>
+                            @Html.DisplayNameFor(model => model.TrailerReg)
+                        </th>
+                        <td id="TrailerReg2">
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>
+                            @Html.DisplayNameFor(model => model.Warehouse)
+                        </th>
+                        <td id="Warehouse">
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>
+                            @Html.DisplayNameFor(model => model.ExporterId)
+                        </th>
+                        <td id="Exporter">
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <th>
+                            <div class="icheck-info icheck-inline">
+                                <input disabled type="radio" id="ImportDetails" name="someGroupName" />
+                                <label for="ImportDetails">Import</label>
+                            </div>
+                            <div class="icheck-info icheck-inline">
+                                <input disabled type="radio" id="ExportDetails" name="someGroupName" />
+                                <label for="ExportDetails">Export</label>
+                            </div>
+                        </th>
+                        <td >
+
+
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <th>
+                            @Html.DisplayNameFor(model => model.PhoneNumber)
+                        </th>
+                        <td id="PhoneNumber2">
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>
+                            @Html.DisplayNameFor(model => model.Email)
+                        </th>
+                        <td id="Email2">
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>
+                            @Html.DisplayNameFor(model => model.Time)
+                        </th>
+                        <td id="RowIndex">
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>
+                            @Html.DisplayNameFor(model => model.CreatedDateUtc)
+                        </th>
+                        <td id="CreatedDateUtc">
+                        </td>
+                    </tr>
+
+
+
+                </table>
+            </div>
+            <div class="modal-footer">
+                <a id="EditBtn" asp-action="Edit" class="btn btn-primary">Edit</a>
+                <a onclick="sendEmail()" class="btn btn-warning text-white">Email</a>
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+@section Scripts{
+
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="https://unpkg.com/@@popperjs/core@2/dist/umd/popper.min.js"></script>
+    <script src="https://unpkg.com/tippy.js@6/dist/tippy-bundle.umd.js"></script>
+    <script src="~/plugins/bootstrap-switch/js/bootstrap-switch.js"></script>
+
+    <script>
+
+        function RadioBtn(e) {
+
+            if (e.id == "Import") {
+                $("#import").val(true)
+                $("#export").val(false)
+
+            }
+
+            else {
+                $("#import").val(false)
+                $("#export").val(true)
+            }
+
+            $("#btn").attr("disabled", false);
+
+        }
+
+        $(document).ready(function () {
+
+            $('#ExporterList').select2({
+                dropdownParent: $('#staticBackdrop'),
+                minimumInputLength: 3,
+                width: 'resolve',
+
+
+            });
+
+
+
+        });
+
+        var BookingId;
+
+        $('#EditBtn').click(function (e) {
+            e.preventDefault();
+            window.location.href = $(this).attr('href') + '/' + BookingId;
+        });
+
+        $("#btn").click(function () {
+
+            setTimeout(function () {
+                //your code to be executed after 1 second
+                $("#btn").attr("disabled", true);
+            }, 500);
+
+        });
+        function InputChange() {
+
+
+            $("#btn").attr("disabled", false);
+        }
+
+        var adminUsers;
+        var userLoggedIn;
+
+
+        $.ajax({
+            type: "GET",
+            dataType: 'json',
+            url: "/GCCustomer/GCBooking/GetUsers",
+            async: false,
+            success: function (response) {
+                console.log(response);
+                adminUsers = response.data.adminUsers;
+                userLoggedIn = response.data.userLoggedIn;
+            },
+            error: function (jqXHR, textStatus, errorThrown) {
+                alert(jqXHR.status);
+            }
+        });
+
+        $(".row__seat:nth-child(6)").css("margin", "0 25px 0 0");
+
+        function loadSlots() {
+
+            document.getElementById("warehouse").disabled = false;
+            var date = document.getElementById("date").value;
+            var WarehouseId = document.getElementById("warehouse").value;
+            var NumOfSlots;
+            var closedSlots;
+
+
+            $.ajax({
+                type: "GET",
+                dataType: 'json',
+                url: "/GCCustomer/GCBooking/GetAllSlots?date=" + date + "&WId=" + WarehouseId,
+                async: false,
+                success: function (response) {
+                    console.log(response);
+                    NumOfSlots = response.data.numOfSlots;
+                    closedSlots = response.data.closedSlots;
+                },
+                error: function (jqXHR, textStatus, errorThrown) {
+                    alert(jqXHR.status);
+                }
+            });
+
+            if (NumOfSlots == 12) {
+                $(".inner").css("width", "80%");
+            }
+
+            else if (NumOfSlots < 12) {
+                $(".inner").css("width", "80%");
+            }
+
+            else if (NumOfSlots > 13) {
+                $(".inner").css("width", "98%");
+            }
+
+            else if (NumOfSlots > 15) {
+                $(".inner").css("width", "100%");
+            }
+
+            var TimeContainer = document.querySelector('#TimeContainer');
+            TimeContainer.innerHTML = ' ';
+
+            var date = document.getElementById("date").value;
+            var WId = document.getElementById("warehouse").value;
+            var xhr = new XMLHttpRequest();
+            xhr.open("GET", "/GCCustomer/GCBooking/GetBooked?date=" + date + "&WarehouseId=" + WId, true);
+            xhr.send();
+            xhr.onload = function () {
+                if (this.status == 200) {
+                    var bookings = JSON.parse(this.responseText);
+
+                    console.log(bookings);
+
+
+                    for (var i = 1; i <= 12; i++) {
+
+                        var time = '0' + i + ':00';
+                        var timePM = (i + 12) + ':00'
+
+                        if (i > 9) {
+                            var time = i + ':00';
+                        }
+
+
+                        var templateString = '<div class="row">'
+                            + ' <p>' + time + '</p>';
+
+
+
+                        if (closedSlots.includes(i) && i <= 12) {
+
+                            for (var s = 0; s < NumOfSlots; s++) {
+                                templateString += '<div  class="row__seat row__seat--blocked" ></div>';
+                            }
+
+                        }
+
+                        else {
+                            var count = 0;
+                            let refs = [];
+                            let emails = [];
+                            let Ids = [];
+                            let statuses = [];
+                            let truckReg = [];
+                            let trailerReg = [];
+
+
+
+                            for (var k = 0; k < bookings.data.length; k++) {
+                                var BookedTime = bookings.data[k].time;
+
+                                if (i == BookedTime) {
+                                    count += 1;
+                                    refs.push(bookings.data[k].bookingRef);
+                                    emails.push(bookings.data[k].email);
+                                    Ids.push(bookings.data[k].id);
+                                    statuses.push(bookings.data[k].status);
+                                    truckReg.push(bookings.data[k].registration);
+                                    trailerReg.push(bookings.data[k].trailerReg);
+                                }
+                            }
+
+
+                            for (var u = 0; u < count; u++) {
+                                if (adminUsers.includes(userLoggedIn)) {
+
+                                    if (statuses[u] == "Gate In") {
+                                        templateString += '<div  onClick="showDetails(this)" data-tippy-content="<p>Truck Reg: ' + truckReg[u] + '</p><p>Trailer: ' + trailerReg[u] + '</p>" class="row__seat row__seat--reserved--gi" data-id="' + Ids[u] + '" data-email="' + emails[u] + '" data-ref="' + refs[u] + '"><b>' + refs[u] + '</b></div>';
+
+                                    }
+
+                                    else if (statuses[u] == "BOOKED") {
+                                        templateString += '<div  onClick="showDetails(this)" data-tippy-content="<p>Booking Ref: ' + refs[u] + '</p><p>Truck Reg: ' + truckReg[u] + '</p><p>Trailer: ' + trailerReg[u] + '</p>" class="row__seat row__seat--reserved--access" data-id="' + Ids[u] + '" data-email="' + emails[u] + '" data-ref="' + refs[u] + '"></div>';
+
+                                    }
+
+                                    else if (statuses[u] == "Gate Out") {
+                                        templateString += '<div  onClick="showDetails(this)" data-tippy-content="<p>Truck Reg: ' + truckReg[u] + '</p><p>Trailer: ' + trailerReg[u] + '</p>" class="row__seat row__seat--reserved--go" data-id="' + Ids[u] + '" data-email="' + emails[u] + '" data-ref="' + refs[u] + '"><b>' + refs[u] + '</b></div>';
+
+                                    }
+
+
+                                }
+                                else {
+                                    if (emails[u] == userLoggedIn) {
+                                        templateString += '<div  onClick="showDetails(this)" data-tippy-content="<p>Booking Ref: ' + refs[u] + '</p><p>Truck Reg: ' + truckReg[u] + '</p><p>Trailer: ' + trailerReg[u] + '</p>" class="row__seat row__seat--reserved--access" data-id="' + Ids[u] + '" data-email="' + emails[u] + '" data-ref="' + refs[u] + '"></div>';
+
+                                    }
+                                    else {
+                                        templateString += '<div  class="row__seat row__seat--reserved" data-id="' + Ids[u] + '" data-email="' + emails[u] + '" data-ref="' + refs[u] + '"></div>';
+
+                                    }
+                                }
+
+
+                            }
+
+
+                            for (var j = 1; j <= NumOfSlots - count; j++) {
+
+
+                                templateString += '<div onclick="showModal(this)" class="row__seat" data-time="' + i.toString() + '"></div>';
+
+
+                            }
+                        }
+
+
+                        templateString += ' <p>' + timePM + '</p>';
+
+                        TPM = i + 12;
+
+                        if (closedSlots.includes(TPM) && TPM >= 13) {
+
+                            for (var x = 0; x < NumOfSlots; x++) {
+                                templateString += '<div  class="row__seat row__seat--blocked" ></div>';
+                            }
+
+                        }
+                        else {
+                            var countTwo = 0;
+                            let refsTwo = [];
+                            let emailsTwo = [];
+                            let IdsTwo = [];
+                            let statusesTwo = [];
+                            let truckRegTwo = [];
+                            let trailerRegTwo = [];
+
+                            for (var k = 0; k < bookings.data.length; k++) {
+                                var BookedTime = bookings.data[k].time;
+
+                                var pmTime = i + 12;
+
+                                if (pmTime == BookedTime) {
+                                    countTwo += 1;
+                                    refsTwo.push(bookings.data[k].bookingRef);
+                                    emailsTwo.push(bookings.data[k].email);
+                                    IdsTwo.push(bookings.data[k].id);
+                                    statusesTwo.push(bookings.data[k].status);
+                                    truckRegTwo.push(bookings.data[k].registration);
+                                    trailerRegTwo.push(bookings.data[k].trailerReg);
+
+                                }
+                            }
+
+
+                            for (var u = 0; u < countTwo; u++) {
+                                if (adminUsers.includes(userLoggedIn)) {
+
+
+                                    if (statusesTwo[u] == "Gate In") {
+                                        templateString += '<div onClick="showDetails(this)" data-tippy-content="<p>Truck Reg: ' + truckRegTwo[u] + '</p><p>Trailer: ' + trailerRegTwo[u] + '</p>" data-id="' + IdsTwo[u] + '" class="row__seat row__seat--reserved--gi" data-email="' + emailsTwo[u] + '" data-ref="' + refsTwo[u] + '"><b>' + refsTwo[u] + '</b></div>';
+                                    }
+
+                                    else if (statusesTwo[u] == "BOOKED") {
+                                        templateString += '<div onClick="showDetails(this)" data-tippy-content="<p>Booking Ref: ' + refsTwo[u] + '</p><p>Truck Reg: ' + truckRegTwo[u] + '</p><p>Trailer: ' + trailerRegTwo[u] + '</p>" data-id="' + IdsTwo[u] + '" class="row__seat row__seat--reserved--access" data-email="' + emailsTwo[u] + '" data-ref="' + refsTwo[u] + '"></div>';
+
+
+                                    }
+
+                                    else if (statusesTwo[u] == "Gate Out") {
+                                        templateString += '<div onClick="showDetails(this)" data-tippy-content="<p>Booking Ref: ' + refsTwo[u] + '</p><p>Truck Reg: ' + truckRegTwo[u] + '</p><p>Trailer: ' + trailerRegTwo[u] + '</p>" data-id="' + IdsTwo[u] + '" class="row__seat row__seat--reserved--go" data-email="' + emailsTwo[u] + '" data-ref="' + refsTwo[u] + '"></div>';
+                                    }
+
+                                }
+                                else {
+                                    if (emailsTwo[u] == userLoggedIn) {
+                                        templateString += '<div onClick="showDetails(this)" data-tippy-content="<p>Booking Ref: ' + refsTwo[u] + '</p><p>Truck Reg: ' + truckRegTwo[u] + '</p><p>Trailer: ' + trailerRegTwo[u] + '</p>" data-id="' + IdsTwo[u] + '" class="row__seat row__seat--reserved--access" data-email="' + emailsTwo[u] + '" data-ref="' + refsTwo[u] + '"></div>';
+
+                                    }
+                                    else {
+                                        templateString += '<div class="row__seat row__seat--reserved"  data-id="' + IdsTwo[u] + '" data-email="' + emailsTwo[u] + '" data-ref="' + refsTwo[u] + '"><b></b></div>';
+
+                                    }
+                                }
+
+                            }
+
+
+                            for (var j = 1; j <= NumOfSlots - countTwo; j++) {
+                                var Time = i + 12;
+                                templateString += '<div onclick="showModal(this)" class="row__seat" data-time="' + Time + '"></div>';
+                            }
+                        }
+
+
+
+                        $('#TimeContainer').append(templateString);
+
+
+                        tippy('[data-tippy-content]', {
+                            inertia: true,
+                            allowHTML: true,
+                            animation: 'scale',
+                            placement: 'right',
+
+                        });
+                    }
+
+
+                }
+
+            }
+
+
+
+
+        }
+
+        function showDetails(att) {
+            var BookingRef = att.getAttribute("data-ref");
+            var BookingEmail = att.getAttribute("data-email");
+            BookingId = att.getAttribute("data-id");
+
+
+            $.ajax({
+                type: "GET",
+                dataType: 'json',
+                url: "/GCCustomer/GCBooking/GetBooking?id=" + BookingId,
+                async: false,
+                success: function (response) {
+                    console.log(response.data.bookingRef);
+                    document.getElementById("BookingRef").innerHTML = response.data.bookingRef;
+
+                    var jsonDate = response.data.date;
+
+                    var datestr = jsonDate.toString();
+                    var date = new Date(datestr.substr(0, 10));
+                    var month = ("0" + (date.getMonth() + 1)).slice(-2);
+
+
+
+                    document.getElementById("Date").innerHTML = ("0" + date.getDate()).slice(-2) + '-' + month + '-' + date.getFullYear();
+                    document.getElementById("Transporter").innerHTML = response.data.transporter.name;
+                    document.getElementById("Registration2").innerHTML = response.data.registration;
+                    document.getElementById("TrailerReg2").innerHTML = response.data.trailerReg;
+                    document.getElementById("Warehouse").innerHTML = response.data.warehouse.name;
+                    document.getElementById("Exporter").innerHTML = response.data.exporter.name;
+                   @* document.getElementById("Name").innerHTML = response.data.name;*@
+
+                    document.getElementById("ExportDetails").checked   = response.data.export;
+                    document.getElementById("ImportDetails").checked  = response.data.import;
+                    document.getElementById("PhoneNumber2").innerHTML = response.data.phoneNumber;
+                    document.getElementById("Email2").innerHTML = response.data.email;
+                    document.getElementById("RowIndex").innerHTML = response.data.time + " : 00";
+
+                    var jsonDate = response.data.createdDateUtc;
+
+                    var datestr = jsonDate.toString();
+                    var date = new Date(datestr.substr(0, 10));
+                    var month = ("0" + (date.getMonth() + 1)).slice(-2);
+
+                    var time = datestr.substr(11)
+
+                    var hr = time.substr(0, 2)
+                    var min = time.substr(3, 2)
+                    var sec = time.substr(6, 2);
+
+
+                    document.getElementById("CreatedDateUtc").innerHTML = ("0" + date.getDate()).slice(-2) + '-' + month + '-' + date.getFullYear() + " " + hr + ":" + min + ":" + sec;
+
+                },
+                error: function (jqXHR, textStatus, errorThrown) {
+                    alert(jqXHR.status);
+                }
+            });
+
+
+
+            $("#DetailsModal").modal('show');
+        }
+
+        function upperCaseF(a) {
+            setTimeout(function () {
+                a.value = a.value.toUpperCase();
+            }, 1);
+        }
+
+        function showModal(slot) {
+            var time = slot.getAttribute("data-time");
+            var date = $("#date").val();
+            var warehouse = $("#warehouse").val();
+
+            $("#dateTwo").val(date)
+            $("#wTwo").val(warehouse)
+            $("#time").val(time)
+            document.getElementById("bRef").setAttribute("value", uuidv4().toUpperCase())
+
+            $("#staticBackdrop").modal('show');
+        }
+
+        function uuidv4() {
+            return 'xxxyxxx'.replace(/[xy]/g, function (c) {
+                var r = Math.random() * 16 | 0, v = c == 'x' ? r : (r & 0x3 | 0x8);
+                return v.toString(16);
+            });
+        }
+
+        function sendEmail() {
+
+            $("#DetailsModal").modal('hide');
+            swal("Enter email here:", {
+                content: "input",
+                button: {
+                    text: "Send!",
+                    closeModal: false,
+                },
+            })
+                .then((value) => {
+                    //swal.Loading();
+
+                    if (!value) {
+                        swal.close();
+                        return null;
+                    };
+
+                    var uri = "/FruitCustomer/Booking/Send?id=" + BookingId + "&email=" + value;
+                    var res = encodeURI(uri);
+
+
+
+                    $.ajax({
+                        url: res,
+                        success: function (response) {
+                            swal.close();
+                            swal({
+                                title: "Email Sent!",
+                                text: "Please check your inbox",
+                                icon: "success",
+                                button: "Okay",
+                            });
+
+
+                        },
+                        error: function (jqXHR, textStatus, errorThrown) {
+                            swal({
+                                title: "Error!",
+                                text: " Please try again!",
+                                icon: "warning",
+                                button: "Okay",
+                            });
+                        }
+                    });
+
+
+                });
+
+
+
+
+
+
+
+
+        }
+
+
+    </script>
+
+
+
+}
+
+

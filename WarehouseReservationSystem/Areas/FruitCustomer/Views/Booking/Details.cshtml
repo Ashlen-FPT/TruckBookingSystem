@@ -1,0 +1,321 @@
+﻿@model WarehouseReservationSystem.Models.Fruit.Booking
+@using WarehouseReservationSystem.Utility
+
+@using Microsoft.AspNetCore.Identity
+@using WarehouseReservationSystem.Areas.Identity
+
+@inject SignInManager<IdentityUser> SignInManager
+@inject UserManager<IdentityUser> UserManager
+@{ ViewData["Title"] = "Details";
+    Layout = "~/Views/Shared/NewLayout/_Layout.cshtml"; }
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css" />
+<style>
+    .ldBar {
+        width: 50%;
+    }
+
+    .ldBar-label span {
+        font-size: 2.5em;
+        color: #09f;
+        font-weight: 900;
+    }
+
+    table {
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+    th, td {
+        text-align: left;
+        height: 15px;
+        padding: 8px;
+    }
+
+    tr:nth-child(even) {
+        background-color: #f2f2f2;
+    }
+
+    .card {
+        margin: 0 auto; /* Added */
+        float: none; /* Added */
+        margin-bottom: 10px; /* Added */
+    }
+</style>
+
+
+<!-- Preloader -->
+<div class="preloader dark-mode flex-column justify-content-center align-items-center">
+    <img class="animation__wobble" src="~/Images/FPT.png" alt="AdminLTELogo" height="200" width="200">
+</div>
+
+<!-- Content Header (Page header) -->
+<div class="content-header">
+    <div class="container-fluid">
+        <div class="row mb-2">
+            <div class="col-sm-6">
+                <h1 class="m-0">Booking Details </h1>
+            </div><!-- /.col -->
+            <div class="col-sm-6">
+                <ol class="breadcrumb float-sm-right">
+                    <a class="btn btn-primary" asp-action="Create">
+                        <i class="fas fa-plus"></i>
+                        &nbsp; Create Booking
+                    </a>
+                </ol>
+            </div><!-- /.col -->
+        </div><!-- /.row -->
+    </div><!-- /.container-fluid -->
+</div>
+<!-- /.content-header -->
+<!-- Main content -->
+<div class="content">
+    <div class="container-fluid">
+
+        <div>
+
+
+            <div class="card card-body" style="margin-top:10px; width:50%">
+
+
+                <table id="details">
+                    <tr>
+                        <th>
+                            @Html.DisplayNameFor(model => model.BookingRef)
+                        </th>
+                        <td>
+                            @Html.DisplayFor(model => model.BookingRef)
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>
+                            @Html.DisplayNameFor(model => model.Date)
+                        </th>
+                        <td>
+                            @Html.DisplayFor(model => model.Date)
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>
+                            @Html.DisplayNameFor(model => model.Transporter)
+                        </th>
+                        <td>
+                            @Html.DisplayFor(model => model.Transporter.Name)
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>
+                            @Html.DisplayNameFor(model => model.Registration)
+                        </th>
+                        <td>
+                            @Html.DisplayFor(model => model.Registration)
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>
+                            @Html.DisplayNameFor(model => model.TrailerReg)
+                        </th>
+                        <td>
+                            @Html.DisplayFor(model => model.TrailerReg)
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>
+                            @Html.DisplayNameFor(model => model.Warehouse)
+                        </th>
+                        <td>
+                            @Html.DisplayFor(model => model.Warehouse.Name)
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>
+                            @Html.DisplayNameFor(model => model.Exporter)
+                        </th>
+                        <td>
+                            @Html.DisplayFor(model => model.Exporter.Name)
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <th>
+                            @Html.DisplayNameFor(model => model.NumOfPlts)
+                        </th>
+                        <td>
+                            @Html.DisplayFor(model => model.NumOfPlts)
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <th>
+                            @Html.DisplayNameFor(model => model.Name)
+                        </th>
+                        <td>
+                            @Html.DisplayFor(model => model.Name)
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>
+                            @Html.DisplayNameFor(model => model.MarketType)
+                        </th>
+                        <td>
+                            @Html.DisplayFor(model => model.MarketType.Name)
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>
+                            @Html.DisplayNameFor(model => model.PhoneNumber)
+                        </th>
+                        <td>
+                            @Html.DisplayFor(model => model.PhoneNumber)
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>
+                            @Html.DisplayNameFor(model => model.Email)
+                        </th>
+                        <td>
+                            @Html.DisplayFor(model => model.Email)
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>
+                            @Html.DisplayNameFor(model => model.RowIndex)
+                        </th>
+                        <td>
+                            @Html.DisplayFor(model => model.RowIndex) : 00
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>
+                            @Html.DisplayNameFor(model => model.CreatedDateUtc)
+                        </th>
+                        <td>
+                            @Html.DisplayFor(model => model.CreatedDateUtc)
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <th>
+                            @Html.DisplayNameFor(model => model.TBRN)
+                        </th>
+                        <td>
+                            @Html.DisplayFor(model => model.TBRN)
+                        </td>
+                    </tr>
+
+
+                </table>
+
+
+
+            </div>
+
+
+            <br />
+
+            <div class="row">
+                <div style="margin: 0 auto; float: none; margin-bottom: 10px; ">
+
+                    @if (User.IsInRole(SD.Role_GateUser) || User.IsInRole(SD.Role_TruckStop))
+                    {
+                        <a onclick="sendEmail()" class="btn btn-warning text-white">Email</a>
+                        <a onclick="window.print()" class="btn btn-info text-white">Print</a>
+                        <a asp-action="StatusUpdate" class="btn btn-success">Back to List</a> }
+                    else
+                    {
+                        <a asp-action="Edit" class="btn btn-primary" asp-route-id="@Model.Id">Edit</a>
+                        <a onclick="sendEmail()" class="btn btn-warning text-white">Email</a>
+                        <a onclick="window.print()" class="btn btn-info text-white">Print</a>
+                        <a asp-action="Index" class="btn btn-success">Booking List</a>
+                        <a class="btn btn-dark" onclick="history.go(-1); return false;" href="#"><i class="fas fa-angle-double-left"></i></a><br />}
+
+                </div>
+            </div>
+
+
+
+
+        </div>
+
+
+    </div>
+    <!-- /.row -->
+</div><!-- /.container-fluid -->
+<!-- Main content -->
+<!-- /.content -->
+
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+@section Scripts{
+
+    <script>
+
+
+
+        function sendEmail() {
+
+           @*
+*@
+            swal("Enter email here:", {
+                content: "input",
+                button: {
+                    text: "Send!",
+                    closeModal: false,
+                },
+            })
+                .then((value) => {
+                    //swal.Loading();
+
+                    if (!value) {
+                        swal.close();
+                        return null;
+                    };
+
+                    var uri = "/Customer/Booking/Send?id=" + @Model.Id + "&email=" + value;
+                    var res = encodeURI(uri);
+
+
+
+                    $.ajax({
+                        url: res,
+                        success: function (response) {
+                            swal.close();
+                            swal({
+                                title: "Email Sent!",
+                                text: "Please check your inbox",
+                                icon: "success",
+                                button: "Okay",
+                            });
+
+
+                        },
+                        error: function (jqXHR, textStatus, errorThrown) {
+                            swal({
+                                title: "Error!",
+                                text: " Please try again!",
+                                icon: "warning",
+                                button: "Okay",
+                            });
+                        }
+                    });
+
+
+            });
+
+
+
+
+
+
+
+
+        }
+
+
+
+
+    </script>
+
+
+
+
+}

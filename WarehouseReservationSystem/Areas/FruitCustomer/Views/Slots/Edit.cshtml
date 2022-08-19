@@ -1,0 +1,222 @@
+﻿@model WarehouseReservationSystem.Models.Fruit.Slots
+
+@{ Layout = "~/Views/Shared/NewLayout/_Layout.cshtml"; }
+
+
+<link rel="stylesheet" href="https://cdn.datatables.net/1.10.16/css/jquery.dataTables.min.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css" />
+<link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<!-- Preloader -->
+<div class="preloader dark-mode flex-column justify-content-center align-items-center">
+    <img class="animation__wobble" src="~/Images/FPT.png" alt="AdminLTELogo" height="200" width="200">
+</div>
+
+<!-- Content Header (Page header) -->
+<div class="content-header">
+    <div class="container-fluid">
+        <div class="row mb-2">
+            <div class="col-sm-6">
+                <h1 class="m-0"> Edit Slot </h1>
+            </div><!-- /.col -->
+            <div class="col-sm-6">
+                <ol class="breadcrumb float-sm-right">
+                    <breadcrumb></breadcrumb>
+                </ol>
+            </div><!-- /.col -->
+        </div><!-- /.row -->
+    </div><!-- /.container-fluid -->
+</div>
+<!-- /.content-header -->
+<!-- Main content -->
+<div class="content">
+    <div class="container-fluid">
+
+
+        <div class="row">
+            <div class="col-md-4">
+                <form asp-action="Edit" id="formid">
+                    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                    <input type="hidden" asp-for="Id" />
+
+
+                    <input id="date" type="hidden" asp-for="Date" />
+
+
+                    <div class="form-group">
+                        <label asp-for="WarehouseId" class="control-label"></label>
+                        <select asp-for="WarehouseId" id="warehouse" class="form-control" asp-items="ViewBag.WarehouseId" style="pointer-events:none" readonly></select>
+                        <span asp-validation-for="WarehouseId" class="text-danger"></span>
+                    </div>
+                    <input id="startTime" asp-for="StartTime" type="hidden" class="form-control" />
+                    <input asp-for="EndTime" type="hidden" id="endTime" class="form-control" />
+
+                    <table>
+                        <tr>
+                            <td>
+                                <div id="knobcontainer"></div>
+                            </td>
+                            <td>
+                                <label>Start</label>
+                                <div class="graph-left" id="start"></div>
+                                <label>End</label>
+                                <div class="graph-right" id="end"></div>
+                                <label>Duration</label>
+                                <div class="graph-center"></div>
+                            </td>
+                        </tr>
+                    </table>
+                    <div class="form-group">
+                        <input type="submit" value="Save" id="submitBtn" class="btn btn-primary" />
+                        <a asp-action="Index" class="btn btn-success">Back to List</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+
+    </div>
+    <!-- /.row -->
+</div><!-- /.container-fluid -->
+<!-- Main content -->
+<!-- /.content -->
+@section Scripts{
+
+    <script src="~/js/closeSlots.js"></script>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.7.0/d3.min.js"></script>
+    <script src="~/js/moment.js"></script>
+
+    <script>
+var len = 0;
+        var data;
+
+        $(document).on('click', '#submitBtn', function (e) {
+
+            dateChange();
+
+            if (len > 0) {
+                e.preventDefault();
+
+                swal({
+                    title: "Are you sure?",
+                    text: "There are " + len + " Bookings made between this time slot! They will be cancelled!",
+                    icon: "warning",
+                    buttons: true,
+                    dangerMode: true,
+                })
+                    .then((willDelete) => {
+                        if (willDelete) {
+
+                            for (var i = 0; i < len; i++) {
+
+                                var id = data.data[i].id;
+
+                                $.ajax({
+                                    type: "DELETE",
+                                    url: "/FruitCustomer/Slots/DeleteEmailSlots?id=" + id,
+                                    success: function (data) {
+                                        if (data.success) {
+                                            toastr.success(data.message);
+                                        }
+                                        else {
+                                            toastr.error(data.message);
+                                        }
+                                    }
+                                });
+                            }
+
+                            $('#formid').submit();
+                        }
+                        else {
+                            swal("The Bookings are safe!");
+
+                        }
+                    });
+            }
+
+            else {
+                $('#formid').submit();
+            }
+
+
+        });
+
+
+
+        function dateChange() {
+
+            var date = document.getElementById("date").value;
+
+            let now = new Date();
+            var dateString = moment(now).format('YYYY-MM-DD');
+
+            var startTime = document.getElementById("startTime").value;
+            var endTime = document.getElementById("endTime").value;
+
+            var warehouse = document.getElementById("warehouse").value;
+            $.ajax({
+                type: "GET",
+                dataType: 'json',
+                url: "/FruitCustomer/Slots/GetBookedSlots?date=" + date + "&WarehouseId=" + warehouse + "&sTime=" + startTime + "&eTime=" + endTime,
+                async: false,
+                success: function (response) {
+                    len = response.data.length;
+                    data = response;
+
+                },
+                error: function (jqXHR, textStatus, errorThrown) {
+                    alert(jqXHR.status);
+                }
+            });
+
+        }</script>
+
+    <script src="~/js/plugin.js"></script>
+
+
+    <script>
+var x = $("#startTime").val() + ":00";
+
+        var y = $("#endTime").val() + ":00";
+
+        console.log(x + " " + y)
+
+        $("#knobcontainer").timerangewheel({
+            width: 300,
+            height: 300,
+            indicatorWidth: 12,
+            handleRadius: 15,
+            handleStrokeWidth: 1,
+            accentColor: '#2C3E50',
+            handleIconColor: "#fff",
+            handleStrokeColor: "#fff",
+            handleFillColorStart: "#0072bb",
+            handleFillColorEnd: "#0072bb",
+            tickColor: "#8a9097",
+            indicatorBackgroundColor: "#8cc63e",
+            data: { "start": x, "end": y },
+            onChange: function (timeObj) {
+                $(".graph-left").html(timeObj.start);
+                $(".graph-right").html(timeObj.end);
+                $(".graph-center").html(timeObj.duration);
+
+                if (document.getElementById("start").innerHTML.split(":")[0] == "00") {
+                    $("#startTime").val(24);
+                    $("#endTime").val(document.getElementById("end").innerHTML.split(":")[0]);
+                }
+
+                else if (document.getElementById("end").innerHTML.split(":")[0] == "00") {
+                    $("#startTime").val(document.getElementById("start").innerHTML.split(":")[0]);
+                    $("#endTime").val(24);
+                }
+
+                else {
+                    $("#startTime").val(document.getElementById("start").innerHTML.split(":")[0]);
+                    $("#endTime").val(document.getElementById("end").innerHTML.split(":")[0]);
+                }
+            }
+        });</script>
+}

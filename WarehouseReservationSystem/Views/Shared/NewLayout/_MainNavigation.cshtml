@@ -1,0 +1,349 @@
+﻿@using static WarehouseReservationSystem.Helpers.NavigationIndicatorHelper;
+@using Microsoft.AspNetCore.Identity
+@using WarehouseReservationSystem.Utility
+@inject SignInManager<IdentityUser> SignInManager
+@inject UserManager<IdentityUser> UserManager
+
+@{ ApplicationUser applicationUser = (ApplicationUser)await UserManager.GetUserAsync(User); }
+<!-- Main Sidebar Container -->
+<aside class="main-sidebar sidebar-dark-primary elevation-4">
+    <!-- Brand Logo -->
+    <a asp-area="FruitCustomer" asp-controller="Booking" asp-action="Create" class="brand-link">
+        <img src="~/Images/FPT.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
+        <span class="brand-text font-weight-light"><b>FPT Group</b> (Pty) Ltd</span>
+    </a>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <!-- Sidebar user panel (optional) -->
+        @if (SignInManager.IsSignedIn(User) && applicationUser != null)
+        {
+<div class="user-panel mt-3 pb-3 mb-3 d-flex">
+    <div class="image">
+        @*<img src="~/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">*@
+        <i class="fas fa-user-circle fa-2x text-secondary"></i>
+    </div>
+    <div class="info">
+        <a asp-area="Identity" asp-page="/Account/Manage/Index" title="Manage" class="d-block">Hello @applicationUser.FirstName!</a>
+    </div>
+</div> }
+
+else
+{
+<div class="user-panel mt-3 pb-3 mb-3 d-flex">
+    <div class="info">
+        <a href="#" class="d-block">Hi, Visitor</a>
+    </div>
+</div>}
+        <!-- SidebarSearch Form -->
+        <div class="form-inline">
+            <div class="input-group" data-widget="sidebar-search">
+                <input class="form-control form-control-sidebar" type="search" placeholder="Search" aria-label="Search">
+                <div class="input-group-append">
+                    <button class="btn btn-sidebar">
+                        <i class="fas fa-search fa-fw"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Sidebar Menu -->
+        <nav class="mt-2">
+            <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+
+
+
+
+                @if (User.IsInRole(SD.Role_Supervisor) || User.IsInRole(SD.Role_Controller))
+                {
+                    <li class="nav-item">
+                        <a href="#" class="nav-link bg-gradient-green text-white">
+                            <i class="nav-icon fas fa-tachometer-alt"></i>
+                            <p>
+                                Analytics
+                                <i class="right fas fa-angle-left"></i>
+                            </p>
+                        </a>
+                        <ul class="nav nav-treeview">
+                            <li class="nav-item">
+                                <a asp-area="FruitAnalytics" asp-controller="Dash" asp-action="Index" class="nav-link @Url.MakeActiveClass("Dash","Index")">
+                                    <i class="nav-icon fas fa-chart-line"></i>
+                                    <p>
+                                        Dashboard
+                                    </p>
+                                </a>
+                            </li>
+
+
+                            <li class="nav-item">
+                                <a asp-area="FruitAnalytics" asp-controller="Reports" asp-action="Index" class="nav-link @Url.MakeActiveClass("Reports", "Index" )">
+                                    <i class="fas fa-stream"></i>
+                                    <p>
+                                        Reports
+                                    </p>
+                                </a>
+                                <hr style="margin: 0 15px 0 15px; border: 1px solid #3db058; " />
+                            </li>
+
+                        </ul>
+
+                    </li>
+                }
+
+
+                @if (User.IsInRole(SD.Role_Supervisor) || User.IsInRole(SD.Role_User_Indi) || User.IsInRole(SD.Role_Controller))
+                {<!--Booking Dropdown-->
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            <i class="fas fa-book-open"></i>
+                            <p>
+                                Booking
+                                <i class="fas fa-angle-left right"></i>
+
+                            </p>
+                        </a>
+                        <ul class="nav nav-treeview">
+                            <!--#####################################-->
+
+                            @if (User.IsInRole(SD.Role_Supervisor))
+                            {
+                                <li class="nav-item">
+                                    <a asp-area="FruitCustomer" asp-controller="Booking" asp-action="Create" class="nav-link @Url.MakeActiveClass(" Booking", "Create" )">
+                                        <i class="far fa-dot-circle nav-icon text-info"></i>
+                                        <p>Make a Booking</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a asp-area="FruitCustomer" asp-controller="Booking" asp-action="Index" class="nav-link @Url.MakeActiveClass(" Booking", "Index" )">
+                                        <i class="far fa-dot-circle nav-icon text-info"></i>
+                                        <p>View all Bookings</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a asp-area="FruitCustomer" asp-controller="Booking" asp-action="StatusUpdate" class="nav-link @Url.MakeActiveClass(" Booking", "StatusUpdate" )">
+                                        <i class="far fa-dot-circle nav-icon text-info"></i>
+                                        <p>Update Booking Status</p>
+                                    </a>
+                                </li>
+                            }
+
+                            else
+                            {
+                                <li class="nav-item">
+                                    <a asp-area="FruitCustomer" asp-controller="Booking" asp-action="Create" class="nav-link @Url.MakeActiveClass(" Booking", "Create" )">
+                                        <i class="far fa-dot-circle nav-icon text-info"></i>
+                                        <p>Make a Booking</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a asp-area="FruitCustomer" asp-controller="Booking" asp-action="Index" class="nav-link @Url.MakeActiveClass(" Booking", "Index" )">
+                                        <i class="far fa-dot-circle nav-icon text-info"></i>
+                                        <p>View all Bookings</p>
+                                    </a>
+                                </li>
+                            }
+
+
+
+                        </ul>
+                    </li>
+                }
+
+                @if ((User.IsInRole(SD.Role_GateUser) || (User.IsInRole(SD.Role_TruckStop))))
+                {
+                    <li class="nav-item">
+                        <a asp-area="FruitCustomer" asp-controller="Booking" asp-action="StatusUpdate" class="nav-link @Url.MakeActiveClass(" Booking", "StatusUpdate" )">
+                            <i class="far fa-dot-circle nav-icon text-info"></i>
+                            <p>Update Booking Status</p>
+                        </a>
+                    </li>
+                }
+
+                @if (User.IsInRole(SD.Role_Supervisor))
+                {<!--Content Dropdown-->
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            <i class="fas fa-copy"></i>
+                            <p>
+                                Content Management
+                                <i class="fas fa-angle-left right"></i>
+
+                            </p>
+                        </a>
+                        <ul class="nav nav-treeview">
+                            <!--#####################################-->
+
+                            <li class="nav-item">
+                                <a asp-area="FruitCustomer" asp-controller="MarketType" asp-action="Index" class="nav-link @Url.MakeActiveClass("MarketType", "Index")">
+                                    <i class="far fa-dot-circle nav-icon text-success"></i>
+                                    <p>Market Type</p>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a asp-area="FruitCustomer" asp-controller="Warehouse" asp-action="Index" class="nav-link @Url.MakeActiveClass("Warehouse", "Index")">
+                                    <i class="far fa-dot-circle nav-icon text-success"></i>
+                                    <p>Warehouses</p>
+                                </a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">
+                                    <i class="nav-icon fas fa-circle"></i>
+                                    <p>
+                                        Slots
+                                        <i class="right fas fa-angle-left"></i>
+                                    </p>
+                                </a>
+                                <ul class="nav nav-treeview">
+                                    <li class="nav-item">
+                                        <a asp-area="FruitCustomer" asp-controller="Slots" asp-action="Create" class="nav-link @Url.MakeActiveClass("Slots", "Create")">
+                                            <i class="far fa-dot-circle nav-icon text-info"></i>
+                                            <p>Close Slots</p>
+                                        </a>
+                                    </li>
+
+                                    <li class="nav-item">
+                                        <a asp-area="FruitCustomer" asp-controller="Slots" asp-action="Index" class="nav-link @Url.MakeActiveClass("Slots", "Index")">
+                                            <i class="far fa-dot-circle nav-icon text-info"></i>
+                                            <p>View Closed Slots</p>
+                                        </a>
+                                    </li>
+
+                                </ul>
+                            </li>
+
+                            <li class="nav-item">
+                                <a asp-area="FruitCustomer" asp-controller="Transporter" asp-action="Index" class="nav-link @Url.MakeActiveClass("Transporter", "Index")">
+                                    <i class="far fa-dot-circle nav-icon text-success"></i>
+                                    <p>Transporters</p>
+                                </a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a asp-area="FruitCustomer" asp-controller="Exporter" asp-action="ManageIndex" class="nav-link @Url.MakeActiveClass("Exporter", "ManageIndex")">
+                                    <i class="far fa-dot-circle nav-icon text-success"></i>
+                                    <p>Exporters</p>
+                                </a>
+                            </li>
+
+                        </ul>
+                    </li>
+                    <!--User Dropdown-->
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            <i class="fas fa-user-lock"></i>
+                            <p>
+                                User Management
+                                <i class="fas fa-angle-left right"></i>
+
+                            </p>
+                        </a>
+                        <ul class="nav nav-treeview">
+                            <!--#####################################-->
+
+
+                            <li class="nav-item">
+                                <a asp-area="FruitCustomer" asp-controller="User" asp-action="Index" class="nav-link @Url.MakeActiveClass(" User", "Index" )">
+                                    <i class="far fa-dot-circle nav-icon text-info"></i>
+                                    <p>Lock/Unlock Users</p>
+                                </a>
+                            </li>
+                            @* <li class="nav-item">
+                        <a asp-area="FruitCustomer" asp-controller="UserActivities" asp-action="Index" class="nav-link @Url.MakeActiveClass(" UserActivities", "Index" )">
+                            <i class="far fa-dot-circle nav-icon text-info"></i>
+                            <p>User Activity</p>
+                        </a>
+                    </li>*@
+                        </ul>
+                    </li>
+
+
+
+                    <li class="nav-item">
+                        <a asp-area="FruitCustomer" asp-controller="Exporter" asp-action="Index" class="nav-link @Url.MakeActiveClass(" EmailString", "Index" )">
+                            <i class="fas fa-mail-bulk"></i>
+                            <p>
+                                Email
+                            </p>
+                        </a>
+                    </li>
+                }
+
+                @if (User.IsInRole(SD.Role_Controller))
+                {
+
+                    <!--User Dropdown-->
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            <i class="fas fa-user-lock"></i>
+                            <p>
+                                User Management
+                                <i class="fas fa-angle-left right"></i>
+
+                            </p>
+                        </a>
+                        <ul class="nav nav-treeview">
+                            <!--#####################################-->
+
+
+                            <li class="nav-item">
+                                <a asp-area="FruitCustomer" asp-controller="User" asp-action="Index" class="nav-link @Url.MakeActiveClass(" User", "Index" )">
+                                    <i class="far fa-dot-circle nav-icon text-info"></i>
+                                    <p>Lock/Unlock Users</p>
+                                </a>
+                            </li>
+                            @* <li class="nav-item">
+                        <a asp-area="FruitCustomer" asp-controller="UserActivities" asp-action="Index" class="nav-link @Url.MakeActiveClass(" UserActivities", "Index" )">
+                            <i class="far fa-dot-circle nav-icon text-info"></i>
+                            <p>User Activity</p>
+                        </a>
+                    </li>*@
+                        </ul>
+                    </li>
+
+                }
+                <li class="nav-header">Extra</li>
+                <li class="nav-item">
+                    <a class="nav-link " asp-area="Selection" asp-controller="Home" asp-action="About">
+                        <i class="fas fa-info-circle"></i>
+                        <p>
+                            About
+                        </p>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " asp-area="Selection" asp-controller="Home" asp-action="ContactUs">
+                        <i class="fas fa-phone"></i>
+                        <p>
+                            Contact Us
+                        </p>
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link " href="~/Content/Terms and conditions.pdf">
+                        <i class="fab fa-readme"></i>
+                        <p>
+                            Terms of Use/Disclaimer
+                        </p>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <!-- /.sidebar-menu -->
+    </div>
+    <!-- /.sidebar -->
+</aside>
+
+<script>/** add active class and stay opened when selected */
+            var url = window.location;
+
+            // for sidebar menu entirely but not cover treeview
+            $('ul.nav-sidebar a').filter(function () {
+                return this.href == url;
+            }).addClass('active');
+
+            // for treeview
+            $('ul.nav-treeview a').filter(function () {
+                return this.href == url;
+            }).parentsUntil(".nav-sidebar > .nav-treeview").addClass('menu-open').addClass('active');</script>

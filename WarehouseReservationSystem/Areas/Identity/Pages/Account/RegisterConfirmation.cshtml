@@ -1,0 +1,42 @@
+﻿@page
+@model RegisterConfirmationModel
+@using WarehouseReservationSystem.Utility
+
+@using Microsoft.AspNetCore.Identity
+@using WarehouseReservationSystem.Areas.Identity
+@inject SignInManager<IdentityUser> SignInManager
+@inject UserManager<IdentityUser> UserManager
+
+@{ ViewData["Title"] = "Register confirmation";
+    Layout = "~/Views/Shared/NewLayout/_Layout.cshtml"; }
+
+
+
+@{ if (SignInManager.IsSignedIn(User) && User.IsInRole(SD.Role_Supervisor))
+    {
+        <script>
+    swal({
+        title: "Confirmation Email has been sent to Users Email.",
+        icon: "success",
+        button: "OK",
+    }).then((value) => {
+        var url = '@Url.Action("Index", "User", new { Area = "FruitCustomer" })';
+        window.location.href = url;
+    });
+
+
+        </script>
+    }
+    else
+    {
+        <script>
+                swal({
+                    title: " Please check your email to confirm your account. Thank You!",
+                    icon: "success",
+                    button: "OK",
+                }).then((value) => {
+                    window.location.href = "@Url.Action("Create", "Booking", new { area = "FruitCustomer" })"
+                });
+        </script>
+    }
+}

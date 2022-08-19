@@ -1,0 +1,12 @@
+C:\Users\ashlen_naidoo\Downloads\TruckBookingSystem\WarehouseReservationSystem.Models\bin\Debug\net6.0\WarehouseReservationSystem.Models.deps.json
+C:\Users\ashlen_naidoo\Downloads\TruckBookingSystem\WarehouseReservationSystem.Models\bin\Debug\net6.0\WarehouseReservationSystem.Models.dll
+C:\Users\ashlen_naidoo\Downloads\TruckBookingSystem\WarehouseReservationSystem.Models\bin\Debug\net6.0\WarehouseReservationSystem.Models.pdb
+C:\Users\ashlen_naidoo\Downloads\TruckBookingSystem\WarehouseReservationSystem.Models\obj\Debug\net6.0\WarehouseReservationSystem.Models.csproj.AssemblyReference.cache
+C:\Users\ashlen_naidoo\Downloads\TruckBookingSystem\WarehouseReservationSystem.Models\obj\Debug\net6.0\WarehouseReservationSystem.Models.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ashlen_naidoo\Downloads\TruckBookingSystem\WarehouseReservationSystem.Models\obj\Debug\net6.0\WarehouseReservationSystem.Models.AssemblyInfoInputs.cache
+C:\Users\ashlen_naidoo\Downloads\TruckBookingSystem\WarehouseReservationSystem.Models\obj\Debug\net6.0\WarehouseReservationSystem.Models.AssemblyInfo.cs
+C:\Users\ashlen_naidoo\Downloads\TruckBookingSystem\WarehouseReservationSystem.Models\obj\Debug\net6.0\WarehouseReservationSystem.Models.csproj.CoreCompileInputs.cache
+C:\Users\ashlen_naidoo\Downloads\TruckBookingSystem\WarehouseReservationSystem.Models\obj\Debug\net6.0\WarehouseReservationSystem.Models.dll
+C:\Users\ashlen_naidoo\Downloads\TruckBookingSystem\WarehouseReservationSystem.Models\obj\Debug\net6.0\refint\WarehouseReservationSystem.Models.dll
+C:\Users\ashlen_naidoo\Downloads\TruckBookingSystem\WarehouseReservationSystem.Models\obj\Debug\net6.0\WarehouseReservationSystem.Models.pdb
+C:\Users\ashlen_naidoo\Downloads\TruckBookingSystem\WarehouseReservationSystem.Models\obj\Debug\net6.0\ref\WarehouseReservationSystem.Models.dll

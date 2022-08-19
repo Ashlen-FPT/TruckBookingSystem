@@ -1,0 +1,123 @@
+﻿@using WarehouseReservationSystem.Utility
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/NewLayout/_Layout.cshtml";
+}
+
+<style>
+    * {
+        box-sizing: border-box;
+    }
+
+    /* Create two equal columns that floats next to each other */
+    .column {
+        float: left;
+        width: 48%;
+        margin: 1%;
+        padding: 10px;
+        height: 300px; /* Should be removed. Only for demonstration */
+    }
+
+    /* Clear floats after the columns */
+    .row:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+    .center {
+        text-align: center;
+    }
+
+        /* If the text has multiple lines, add the following: */
+        .center p {
+            line-height: 1.5;
+            display: inline-block;
+            vertical-align: middle;
+        }
+</style>
+
+
+<!-- Modal -->
+<div class="modal fade " id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="staticBackdropLabel">Select a category</h5>
+                <form class="form-inline" asp-area="Identity" asp-page="/Account/Logout" asp-route-returnUrl="@Url.Action("Index", "Home", new { area = "" })">
+                    <button type="submit" class="close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </form>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <button class="column btn btn-warning" onclick="NavigateToFruit();">
+                        <div class="center">
+                            <h1>
+                                Fruit
+                                <br />
+                                <i class="fas fa-lemon"></i>
+                            </h1>
+
+                        </div>
+
+                    </button>
+                    <button class="column btn btn-dark" onclick="NavigateToGC()">
+                        <div class="center">
+                            <h1>
+                                General Cargo
+                                <br />
+                                <i class="fas fa-truck-loading"></i>
+                            </h1>
+
+                        </div>
+                    </button>
+                </div>
+
+            </div>
+            <div class="modal-footer">
+                <form class="form-inline" asp-area="Identity" asp-page="/Account/Logout" asp-route-returnUrl="@Url.Action("Index", "Home", new { area = "" })">
+                    <button type="submit" class="btn btn-secondary">Logout</button>
+                </form>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<script>
+    $(document).ready(function () {
+        $("#staticBackdrop").modal('show');
+
+    });
+
+function NavigateToGC() {
+
+   @* window.location.href = "GCCustomer/GCBooking/Create";*@
+
+   swal({
+        title: "This feature is currently unavailable!",
+                    icon: "warning",
+                    button: "OK",
+                }).then((value) => {
+                   
+                });
+    }
+
+
+</script>
+
+
+<script>
+    function NavigateToFruit() {
+
+        //window.location.href = "FruitCustomer/Booking/Create?Choice=Fruit";
+        window.location.href = "FruitCustomer/Booking/Create";
+
+
+    }
+
+</script>

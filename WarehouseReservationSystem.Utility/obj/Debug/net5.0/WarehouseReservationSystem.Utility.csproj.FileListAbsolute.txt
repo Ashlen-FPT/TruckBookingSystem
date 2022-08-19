@@ -1,0 +1,15 @@
+C:\Users\robin_naidoo\Desktop\WarehouseReservationSystem-master\WarehouseReservationSystem-master\WarehouseReservationSystem.Utility\bin\Debug\net5.0\WarehouseReservationSystem.Utility.deps.json
+C:\Users\robin_naidoo\Desktop\WarehouseReservationSystem-master\WarehouseReservationSystem-master\WarehouseReservationSystem.Utility\bin\Debug\net5.0\WarehouseReservationSystem.Utility.dll
+C:\Users\robin_naidoo\Desktop\WarehouseReservationSystem-master\WarehouseReservationSystem-master\WarehouseReservationSystem.Utility\bin\Debug\net5.0\ref\WarehouseReservationSystem.Utility.dll
+C:\Users\robin_naidoo\Desktop\WarehouseReservationSystem-master\WarehouseReservationSystem-master\WarehouseReservationSystem.Utility\bin\Debug\net5.0\WarehouseReservationSystem.Utility.pdb
+C:\Users\robin_naidoo\Desktop\WarehouseReservationSystem-master\WarehouseReservationSystem-master\WarehouseReservationSystem.Utility\bin\Debug\net5.0\WarehouseReservationSystem.Models.dll
+C:\Users\robin_naidoo\Desktop\WarehouseReservationSystem-master\WarehouseReservationSystem-master\WarehouseReservationSystem.Utility\bin\Debug\net5.0\WarehouseReservationSystem.Models.pdb
+C:\Users\robin_naidoo\Desktop\WarehouseReservationSystem-master\WarehouseReservationSystem-master\WarehouseReservationSystem.Utility\obj\Debug\net5.0\WarehouseReservationSystem.Utility.csproj.AssemblyReference.cache
+C:\Users\robin_naidoo\Desktop\WarehouseReservationSystem-master\WarehouseReservationSystem-master\WarehouseReservationSystem.Utility\obj\Debug\net5.0\WarehouseReservationSystem.Utility.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\robin_naidoo\Desktop\WarehouseReservationSystem-master\WarehouseReservationSystem-master\WarehouseReservationSystem.Utility\obj\Debug\net5.0\WarehouseReservationSystem.Utility.AssemblyInfoInputs.cache
+C:\Users\robin_naidoo\Desktop\WarehouseReservationSystem-master\WarehouseReservationSystem-master\WarehouseReservationSystem.Utility\obj\Debug\net5.0\WarehouseReservationSystem.Utility.AssemblyInfo.cs
+C:\Users\robin_naidoo\Desktop\WarehouseReservationSystem-master\WarehouseReservationSystem-master\WarehouseReservationSystem.Utility\obj\Debug\net5.0\WarehouseReservationSystem.Utility.csproj.CoreCompileInputs.cache
+C:\Users\robin_naidoo\Desktop\WarehouseReservationSystem-master\WarehouseReservationSystem-master\WarehouseReservationSystem.Utility\obj\Debug\net5.0\WarehouseReservationSystem.Utility.csproj.CopyComplete
+C:\Users\robin_naidoo\Desktop\WarehouseReservationSystem-master\WarehouseReservationSystem-master\WarehouseReservationSystem.Utility\obj\Debug\net5.0\WarehouseReservationSystem.Utility.dll
+C:\Users\robin_naidoo\Desktop\WarehouseReservationSystem-master\WarehouseReservationSystem-master\WarehouseReservationSystem.Utility\obj\Debug\net5.0\ref\WarehouseReservationSystem.Utility.dll
+C:\Users\robin_naidoo\Desktop\WarehouseReservationSystem-master\WarehouseReservationSystem-master\WarehouseReservationSystem.Utility\obj\Debug\net5.0\WarehouseReservationSystem.Utility.pdb

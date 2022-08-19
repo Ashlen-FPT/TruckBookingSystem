@@ -1,0 +1,96 @@
+﻿@model WarehouseReservationSystem.Models.GC.GCBooking
+
+@{
+    ViewData["Title"] = "Create2";
+}
+
+<h1>Create2</h1>
+
+<h4>GCBooking</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="BookingRef" class="control-label"></label>
+                <input asp-for="BookingRef" class="form-control" />
+                <span asp-validation-for="BookingRef" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Date" class="control-label"></label>
+                <input asp-for="Date" class="form-control" />
+                <span asp-validation-for="Date" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="WarehouseId" class="control-label"></label>
+                <select asp-for="WarehouseId" class ="form-control" asp-items="ViewBag.WarehouseId"></select>
+            </div>
+            <div class="form-group">
+                <label asp-for="VesselId" class="control-label"></label>
+                <select asp-for="VesselId" class ="form-control" asp-items="ViewBag.VesselId"></select>
+            </div>
+            <div class="form-group">
+                <label asp-for="ExporterId" class="control-label"></label>
+                <select asp-for="ExporterId" class ="form-control" asp-items="ViewBag.ExporterId"></select>
+            </div>
+            <div class="form-group">
+                <label asp-for="TransporterId" class="control-label"></label>
+                <select asp-for="TransporterId" class ="form-control" asp-items="ViewBag.TransporterId"></select>
+            </div>
+            <div class="form-group">
+                <label asp-for="Registration" class="control-label"></label>
+                <input asp-for="Registration" class="form-control" />
+                <span asp-validation-for="Registration" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="TrailerReg" class="control-label"></label>
+                <input asp-for="TrailerReg" class="form-control" />
+                <span asp-validation-for="TrailerReg" class="text-danger"></span>
+            </div>
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" asp-for="Import" /> @Html.DisplayNameFor(model => model.Import)
+                </label>
+            </div>
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" asp-for="Export" /> @Html.DisplayNameFor(model => model.Export)
+                </label>
+            </div>
+            <div class="form-group">
+                <label asp-for="PhoneNumber" class="control-label"></label>
+                <input asp-for="PhoneNumber" class="form-control" />
+                <span asp-validation-for="PhoneNumber" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Email" class="control-label"></label>
+                <input asp-for="Email" class="form-control" />
+                <span asp-validation-for="Email" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Time" class="control-label"></label>
+                <input asp-for="Time" class="form-control" />
+                <span asp-validation-for="Time" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Status" class="control-label"></label>
+                <input asp-for="Status" class="form-control" />
+                <span asp-validation-for="Status" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CreatedDateUtc" class="control-label"></label>
+                <input asp-for="CreatedDateUtc" class="form-control" />
+                <span asp-validation-for="CreatedDateUtc" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+

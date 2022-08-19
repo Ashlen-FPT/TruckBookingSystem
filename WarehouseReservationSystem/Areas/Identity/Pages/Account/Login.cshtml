@@ -1,0 +1,197 @@
+﻿@page
+@model LoginModel
+
+@{
+    Layout = null;
+    ViewData["Title"] = "Log in";
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Sign in</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="~/plugins/fontawesome-free/css/all.min.css">
+    <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" href="~/plugins/icheck-bootstrap/icheck-bootstrap.min.css">
+    <link rel="stylesheet" href="~/css/adminlte.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+    <style>
+        body {
+            background-image: url('/Images/kyle-cut-media-hzR9rDXWbqo-unsplash.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            margin: 0;
+        }
+
+        .card {
+            border: 1px solid #fff;
+            border-radius: 15px;
+            box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.6);
+            background-color: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(5px) saturate(100%) contrast(45%) brightness(130%);
+            position: relative;
+            width: 370px;
+        }
+
+        .dropbtn {
+            color: white;
+            padding: 2px 10px 2px 10px;
+            font-size: 16px;
+            border: none;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+            border-radius: 15%;
+        }
+
+            .dropdown-content a {
+                color: black;
+                padding: 12px 16px;
+                text-decoration: none;
+                display: block;
+                border-radius: 15%;
+            }
+
+                .dropdown-content a:hover {
+                    background-color: #8cc63e
+                }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .dropdown:hover .dropbtn {
+        }
+    </style>
+</head>
+
+
+<body class="hold-transition login-page">
+    <div class="login-box">
+        <div class="login-logo">
+
+            <img src="~/Images/FPT.png" width="100" height="100" />
+        </div>
+        <div class="card">
+            <div class="card-body">
+                <p class="login-box-msg">
+                    Sign in to start your session
+
+
+                </p>
+
+                <form id="account" method="post">
+                    <span asp-validation-for="Input.Email" class="text-danger small"></span>
+                    <div class="input-group mb-3">
+                        <input asp-for="Input.Email" class="form-control" placeholder="email" />
+                        <div class="input-group-append">
+                            <div class="input-group-text">
+                                <span class="fas fa-envelope"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <span asp-validation-for="Input.Password" class="text-danger small"></span>
+                    <div class="input-group mb-3">
+                        <input asp-for="Input.Password" id="password" class="form-control" placeholder="password" />
+                        <div class="input-group-append">
+                            <a class="btn btn-outline-secondary" onclick="passwordVisible()"><i id="passwordToggle" class="fas fa-eye-slash"></i></a>
+                            @*  <div class="input-group-text">
+                                    <span class="fas fa-lock"></span>
+                                </div>*@
+                        </div>
+                    </div>
+
+                    <div class="checkbox">
+
+                        <input type="checkbox" id="agreeCheck" name="agreeCheck" value="check">
+                        <label for="agreeCheck" style="font-size:13px">
+                            I have read and agree to the <a href="~/Content/Terms and conditions.pdf">Terms and Conditions</a>
+
+                        </label><br>
+
+                    </div>
+
+                    <div class="row">
+                        <button id="agreeBtn" type="submit" class="btn btn-success btn-block btn-lg">Sign In</button>
+                    </div>
+
+                    <div class="row">
+                        <br />
+                    </div>
+                    <div class="row">
+                        <div class="col-8">
+
+                            <a asp-area="Identity" asp-page="Register">Don't have an account? </a>
+                            <br />
+
+                        </div>
+                        <div class="col-4">
+                            <div class="dropdown" style="float:right ">
+                                <a class="dropbtn btn btn-info"><b>?</b></a>
+                                <div class="dropdown-content" style=" box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.9);">
+                                    <a class="dropdown-item" id="forgot-password" asp-page="./ForgotPassword">Forgot your password?</a>
+                                    <a class="dropdown-item" id="resend-confirmation" asp-page="./ResendEmailConfirmation">Resend email confirmation</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div asp-validation-summary="All" class="text-danger small"></div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="~/plugins/jquery/jquery.min.js"></script>
+    <script src="~/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/adminlte.min.js"></script>
+    <script>
+
+        var checker = document.getElementById('agreeCheck');
+        var btn = document.getElementById('agreeBtn');
+        btn.disabled = true;
+
+        checker.onchange = function () {
+            btn.disabled = !this.checked;
+        };
+
+
+    </script>
+
+    <script>
+        function passwordVisible() {
+            var x = document.getElementById("password");
+            var passwordToggle = document.getElementById("passwordToggle");
+            if (x.type === "password") {
+                x.type = "text";
+                passwordToggle.className = "fas fa-eye";
+            } else {
+                x.type = "password";
+                passwordToggle.className = "fas fa-eye-slash";
+            }
+        }
+    </script>
+    @section Scripts {
+        <partial name="_ValidationScriptsPartial" />
+
+    }
+</body>
+</html>
+
+

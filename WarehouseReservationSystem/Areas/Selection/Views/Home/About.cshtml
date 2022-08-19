@@ -1,0 +1,222 @@
+﻿@{ ViewData["Title"] = "";
+    Layout = "~/Views/Shared/NewLayout/_Layout.cshtml"; }
+
+<style>
+    .card {
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        transition: 0.3s;
+        border-radius: 5px;
+    }
+
+        .card:hover {
+            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.4);
+        }
+
+    img {
+        border-radius: 5px 5px 0 0;
+    }
+
+    .container {
+        padding: 2px 16px;
+    }
+
+    table, th, td {
+    }
+
+    th, td {
+        padding: 12px;
+    }
+
+    th {
+        padding-right: 100px;
+    }
+
+    td {
+        text-align: left;
+    }
+</style>
+<!-- Preloader -->
+<div class="preloader dark-mode flex-column justify-content-center align-items-center">
+    <img class="animation__wobble" src="~/Images/FPT.png" alt="AdminLTELogo" height="200" width="200">
+</div>
+
+<!-- Content Header (Page header) -->
+<div class="content-header">
+    <div class="container-fluid">
+        <div class="row mb-2">
+            <div class="col-sm-6">
+                <h1>About - FPT &nbsp; <i class="fas fa-info-circle"></i></h1>
+            </div><!-- /.col -->
+            <div class="col-sm-6">
+                <ol class="breadcrumb float-sm-right">
+                    <breadcrumb></breadcrumb>
+                </ol>
+            </div><!-- /.col -->
+        </div><!-- /.row -->
+    </div><!-- /.container-fluid -->
+</div>
+<!-- /.content-header -->
+<!-- Main content -->
+<div class="content">
+    <div class="container-fluid">
+
+
+
+        <div class="card" style=" width:fit-content;">
+
+            <div class="container">
+                <h4><b>Overview</b></h4>
+                <p>Value adding port terminal service provider of choice and committed to quality, care and innovative logistic service solutions through a team that you can depend on, that respects our customer's product and each other's diversity.</p>
+
+                <table style=" width: 100%;">
+                    <tr>
+                        <th>
+                            Website
+                        </th>
+                        <td>
+                            <a href="https://fpt.co.za/"> http://www.fpt.co.za</a>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <th>
+                            Phone
+                        </th>
+                        <td>
+                            0313696800
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <th>
+                            Industry
+                        </th>
+                        <td>
+                            Logistics & Supply Chain
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <th>
+                            Headquarters
+                        </th>
+                        <td>
+                            Durban, KZN
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <th>
+                            Type
+                        </th>
+                        <td>
+                            Privately Held
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <th>
+                            Founded
+                        </th>
+                        <td>
+                            2001
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <th>
+                            Specialties
+                        </th>
+                        <td>
+                            Port Terminals, Inland Terminals, Cargo Handling, Perishable Cargo, Bulk Handling, Project Cargo, and Transport
+                        </td>
+                    </tr>
+                </table>
+
+            </div>
+        </div>
+
+        <br />
+
+
+        <div class="row">
+
+            <div class=" col">
+
+                <div class="card" style=" width: 100%;">
+
+                    <div class="container">
+                        <h4><b>Location - FPT Group (Pty) Ltd</b></h4>
+                        <br />
+                        <iframe width="100%"
+                                height="450"
+                                style="border:0"
+                                loading="lazy"
+                                allowfullscreen
+                                src="https://www.google.com/maps/embed/v1/place?key=AIzaSyAC-0a6lb8riFxUuMfy5XdDyQiZtNgebPI&q=Fpt,Durban+South+Africa&zoom=16&maptype=satellite">
+                        </iframe>
+                    </div>
+                </div>
+
+
+            </div>
+
+
+            <div class=" col">
+
+                <div class="card" style=" width: 100%;">
+
+                    <div class="container">
+                        <h4><b>Location -  Truck Stop</b></h4>
+                        <br />
+                        <iframe width="100%"
+                                height="450"
+                                style="border:0"
+                                loading="lazy"
+                                allowfullscreen
+                                src="https://www.google.com/maps/embed/v1/place?key=AIzaSyAC-0a6lb8riFxUuMfy5XdDyQiZtNgebPI&q=Louis+Botha+Airport%2C+Isipingo+Grove%2C+Umlazi+U%2C+Umlazi%2C+4066&zoom=16">
+                        </iframe>
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+
+
+
+    </div>
+</div>
+
+@section Scripts{
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap&libraries=&v=weekly"
+            defer></script>
+    <script>
+
+                // Initialize and add the map
+                function initMap(): void {
+                    // The location of Uluru
+                    const uluru = { lat: -25.344, lng: 131.036 };
+                    // The map, centered at Uluru
+                    const map = new google.maps.Map(
+                        document.getElementById("map") as HTMLElement,
+                        {
+                            zoom: 4,
+                            center: uluru,
+                        }
+                    );
+
+                    // The marker, positioned at Uluru
+                    const marker = new google.maps.Marker({
+                        position: uluru,
+                        map: map,
+                    });
+                }
+
+
+
+
+    </script>
+
+}

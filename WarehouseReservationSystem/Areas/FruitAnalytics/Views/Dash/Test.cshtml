@@ -1,0 +1,246 @@
+﻿
+@{
+    ViewData["Title"] = "Test";
+    Layout = "~/Views/Shared/NewLayout/_Layout.cshtml";
+}
+
+
+<div class="content-wrapper iframe-mode" data-widget="iframe" data-loading-screen="750">
+    <div class="nav navbar navbar-expand-lg navbar-white navbar-light border-bottom p-0">
+        <a class="nav-link bg-danger" href="#" data-widget="iframe-close">Close</a>
+        <a class="nav-link bg-light" href="#" data-widget="iframe-scrollleft"><i class="fas fa-angle-double-left"></i></a>
+        <ul class="navbar-nav" role="tablist">
+            <li class="nav-item active" role="presentation"><a class="nav-link active" data-toggle="row" id="tab-index" href="#panel-index" role="tab" aria-controls="panel-index" aria-selected="true">Dashboard</a></li>
+        </ul>
+        <a class="nav-link bg-light" href="#" data-widget="iframe-scrollright"><i class="fas fa-angle-double-right"></i></a>
+        <a class="nav-link bg-light" href="#" data-widget="iframe-fullscreen"><i class="fas fa-expand"></i></a>
+    </div>
+    <div class="tab-content">
+        <div class="tab-pane fade active show" id="panel-index" role="tabpanel" aria-labelledby="tab-index"><iframe src="./index.html" style="height: 671px;"></iframe></div>
+        <div class="tab-empty">
+            <h2 class="display-4">No tab selected!</h2>
+        </div>
+        <div class="tab-loading">
+            <div>
+                <h2 class="display-4">Tab is loading <i class="fa fa-sync fa-spin"></i></h2>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script>
+    $('.content-wrapper').IFrame({
+        onTabClick(item) {
+            return item
+        },
+        onTabChanged(item) {
+            return item
+        },
+        onTabCreated(item) {
+            return item
+        },
+        autoIframeMode: true,
+        autoItemActive: true,
+        autoShowNewTab: true,
+        allowDuplicates: true,
+        loadingScreen: 750,
+        useNavbarItems: true
+    })
+</script>
+
+@*<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        * {
+            box-sizing: border-box
+        }
+
+        /* Set height of body and the document to 100% */
+        body, html {
+            height: 100%;
+            margin: 0;
+            font-family: Arial;
+        }
+
+        /* Style tab links */
+        .tablink {
+            background-color: #555;
+            color: white;
+            float: left;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            padding: 14px 16px;
+            font-size: 17px;
+            width: 50%;
+        }
+
+            .tablink:hover {
+                background-color: #777;
+            }
+
+        /* Style the tab content (and add height:100% for full page content) */
+        .tabcontent {
+            color: white;
+            display: none;
+            padding: 100px 20px;
+            height: 100%;
+        }
+
+        #Home {
+            background-color: red;
+        }
+
+        #News {
+            background-color: green;
+        }
+
+        #Contact {
+            background-color: blue;
+        }
+
+        #About {
+            background-color: orange;
+        }
+    </style>
+</head>
+<body>
+    <div><h1>Hello</h1></div>
+    <button class="tablink" onclick="openPage('Home', this, 'red')">Home</button>
+    <button class="tablink" onclick="openPage('News', this, 'green')" id="defaultOpen">News</button>
+    
+
+    <div id="Home" class="tabcontent">
+        <h3>Home</h3>
+        <p>Home is where the heart is..</p>
+    </div>
+
+    <div id="News" class="tabcontent">
+        <h3>News</h3>
+        <p>Some news this fine day!</p>
+    </div>
+
+  
+
+    <script>
+        function openPage(pageName, elmnt, color) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablink");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].style.backgroundColor = "";
+            }
+            document.getElementById(pageName).style.display = "block";
+            elmnt.style.backgroundColor = color;
+        }
+
+        // Get the element with id="defaultOpen" and click on it
+        document.getElementById("defaultOpen").click();
+    </script>
+
+</body>
+</html>*@
+
+
+@*<title>Sign in</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="~/plugins/fontawesome-free/css/all.min.css">
+    <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" href="~/plugins/icheck-bootstrap/icheck-bootstrap.min.css">
+    <link rel="stylesheet" href="~/css/adminlte.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+    <link href="~/css/Reveal.css" rel="stylesheet" />
+    <style>
+        #container {
+            display: flex;
+            flex-direction: column;
+        }
+
+        #sidebar {
+            flex: 0 0 auto;
+        }
+
+        #content {
+            flex: 1 1 auto;
+            overflow: auto;
+            border-radius: 15px 15px;
+            background-image: url('/Images/kyle-cut-media-hzR9rDXWbqo-unsplash.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            margin: 0;
+        }
+
+        @@media (min-width: 49rem) {
+            #container {
+                flex-direction: row;
+                height: 100vh;
+            }
+
+            #sidebar {
+                width: 40rem;
+            }
+        }
+
+        /* not important styles */
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+        }
+
+        main > * {
+            padding: 1rem;
+        }
+
+        #sidebar {
+            background-color: #ffffff;
+        }
+
+        #content {
+            background-color: skyblue;
+            font-size: 1.25rem;
+        }
+    </style>
+
+
+    <main id="container">
+        <div id="content" style="display: flex; justify-content: center; align-items: center;">
+
+            <img src="~/Images/FPT.png" width="250" height="250" style="margin-right:20px; position:absolute" />
+            <div class="reveal" style="margin-bottom:350px"><strong>PEOPLE YOU CAN DEPEND ON.</strong></div>
+
+        </div>
+        <div id="sidebar">
+
+
+
+
+        </div>
+
+    </main>
+
+
+    <script>
+        let duration = 0.8;
+        let delay = 0.3;
+        let revealText = document.querySelector(".reveal");
+        let letters = revealText.textContent.split("");
+        revealText.textContent = "";
+
+        let middle = letters.filter(e => e !== " ").length / 2;
+
+        letters.forEach((letter, i) => {
+            let span = document.createElement("span");
+            span.textContent = letter;
+            span.style.animationDelay = `${delay + Math.abs(i - middle) * 0.1}s`;
+            revealText.append(span);
+        })
+    </script>*@

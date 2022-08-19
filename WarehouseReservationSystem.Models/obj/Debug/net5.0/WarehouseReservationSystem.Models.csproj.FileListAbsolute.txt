@@ -1,0 +1,12 @@
+C:\Users\robin_naidoo\Desktop\WarehouseReservationSystem-master\WarehouseReservationSystem-master\WarehouseReservationSystem.Models\bin\Debug\net5.0\WarehouseReservationSystem.Models.deps.json
+C:\Users\robin_naidoo\Desktop\WarehouseReservationSystem-master\WarehouseReservationSystem-master\WarehouseReservationSystem.Models\bin\Debug\net5.0\WarehouseReservationSystem.Models.dll
+C:\Users\robin_naidoo\Desktop\WarehouseReservationSystem-master\WarehouseReservationSystem-master\WarehouseReservationSystem.Models\bin\Debug\net5.0\ref\WarehouseReservationSystem.Models.dll
+C:\Users\robin_naidoo\Desktop\WarehouseReservationSystem-master\WarehouseReservationSystem-master\WarehouseReservationSystem.Models\bin\Debug\net5.0\WarehouseReservationSystem.Models.pdb
+C:\Users\robin_naidoo\Desktop\WarehouseReservationSystem-master\WarehouseReservationSystem-master\WarehouseReservationSystem.Models\obj\Debug\net5.0\WarehouseReservationSystem.Models.csproj.AssemblyReference.cache
+C:\Users\robin_naidoo\Desktop\WarehouseReservationSystem-master\WarehouseReservationSystem-master\WarehouseReservationSystem.Models\obj\Debug\net5.0\WarehouseReservationSystem.Models.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\robin_naidoo\Desktop\WarehouseReservationSystem-master\WarehouseReservationSystem-master\WarehouseReservationSystem.Models\obj\Debug\net5.0\WarehouseReservationSystem.Models.AssemblyInfoInputs.cache
+C:\Users\robin_naidoo\Desktop\WarehouseReservationSystem-master\WarehouseReservationSystem-master\WarehouseReservationSystem.Models\obj\Debug\net5.0\WarehouseReservationSystem.Models.AssemblyInfo.cs
+C:\Users\robin_naidoo\Desktop\WarehouseReservationSystem-master\WarehouseReservationSystem-master\WarehouseReservationSystem.Models\obj\Debug\net5.0\WarehouseReservationSystem.Models.csproj.CoreCompileInputs.cache
+C:\Users\robin_naidoo\Desktop\WarehouseReservationSystem-master\WarehouseReservationSystem-master\WarehouseReservationSystem.Models\obj\Debug\net5.0\WarehouseReservationSystem.Models.dll
+C:\Users\robin_naidoo\Desktop\WarehouseReservationSystem-master\WarehouseReservationSystem-master\WarehouseReservationSystem.Models\obj\Debug\net5.0\ref\WarehouseReservationSystem.Models.dll
+C:\Users\robin_naidoo\Desktop\WarehouseReservationSystem-master\WarehouseReservationSystem-master\WarehouseReservationSystem.Models\obj\Debug\net5.0\WarehouseReservationSystem.Models.pdb

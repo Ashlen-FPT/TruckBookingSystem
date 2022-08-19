@@ -1,0 +1,196 @@
+﻿@model WarehouseReservationSystem.Models.Fruit.Booking
+@using WarehouseReservationSystem.Utility
+
+@using Microsoft.AspNetCore.Identity
+@using WarehouseReservationSystem.Areas.Identity
+
+@inject SignInManager<IdentityUser> SignInManager
+@inject UserManager<IdentityUser> UserManager
+@{ ViewData["Title"] = "Edit";
+    Layout = "~/Views/Shared/NewLayout/_Layout.cshtml"; }
+<style>
+
+    .two-col {
+        overflow: hidden; /* Makes this div contain its floats */
+    }
+
+        .two-col .col1,
+        .two-col .col2 {
+            width: 49%;
+        }
+
+        .two-col .col1 {
+            float: left;
+        }
+
+        .two-col .col2 {
+            float: right;
+        }
+</style>
+
+<!-- Preloader -->
+<div class="preloader dark-mode flex-column justify-content-center align-items-center">
+    <img class="animation__wobble" src="~/Images/FPT.png" alt="AdminLTELogo" height="200" width="200">
+</div>
+
+<!-- Content Header (Page header) -->
+<div class="content-header">
+    <div class="container-fluid">
+        <div class="row mb-2">
+            <div class="col-sm-6">
+                <h1 class="m-0"> Edit Booking </h1>
+            </div><!-- /.col -->
+            <div class="col-sm-6">
+                <ol class="breadcrumb float-sm-right">
+                    <breadcrumb></breadcrumb>
+                </ol>
+            </div><!-- /.col -->
+        </div><!-- /.row -->
+    </div><!-- /.container-fluid -->
+</div>
+<!-- /.content-header -->
+<!-- Main content -->
+<div class="content">
+    <div class="container-fluid">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+
+
+            <div class="two-col">
+                <div class="col1">
+                    <input type="hidden" asp-for="Id" />
+                    <input asp-for="Date" type="hidden" class="form-control" />
+                    <input type="hidden" asp-for="BookingRef" />
+
+                    <input type="hidden" asp-for="IsLate" />
+                    <input type="hidden" asp-for="IsEarly" />
+                    <input type="hidden" asp-for="CreatedDateUtc" />
+                    <input type="hidden" asp-for="TsArr" />
+                    <input type="hidden" asp-for="TsDep" />
+                    <input type="hidden" asp-for="GIn" />
+                    <input type="hidden" asp-for="GOut" />
+
+
+                    @if (User.IsInRole(SD.Role_Supervisor))
+                    {
+                        <div class="form-group">
+                            <label asp-for="Status" class="control-label"></label>
+                            <select asp-for="Status" name="Status" id="status" class="form-control">
+                                <option value="BOOKED">BOOKED</option>
+                                <option value="Truckstop Arrival">Truckstop Arrival</option>
+                                <option value="Truckstop Depature">Truckstop Depature</option>
+                                <option value="Gate In">Gate In</option>
+                                <option value="Gate Out">Gate Out</option>
+                            </select>
+                        </div> }
+                    else
+                    {
+                        <input type="hidden" asp-for="Status" />
+                        <input type="hidden" asp-for="TBRN" />}
+
+
+
+                    <div class="form-group">
+                        <label asp-for="TransporterId" class="control-label"></label>
+                        <select asp-for="TransporterId" class="form-control" asp-items="ViewBag.TransporterId"></select>
+                        <span asp-validation-for="TransporterId" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Registration" class="control-label"></label>
+                        <input asp-for="Registration" class="form-control" onkeydown="upperCaseF(this)" minlength="6" maxlength="12" />
+                        <span asp-validation-for="Registration" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="TrailerReg" class="control-label"></label>
+                        <input asp-for="TrailerReg" class="form-control" onkeydown="upperCaseF(this)" minlength="6" maxlength="12" />
+                        <span asp-validation-for="TrailerReg" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="WarehouseId" class="control-label"></label>
+                        <select asp-for="WarehouseId" class="form-control" asp-items="ViewBag.WarehouseId" style="pointer-events:none" readonly></select>
+                        <span asp-validation-for="WarehouseId" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="ExporterId" class="control-label"></label>
+                        <select asp-for="ExporterId" class="form-control" asp-items="ViewBag.ExporterId" style="pointer-events:none" readonly></select>
+                        <span asp-validation-for="ExporterId" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="NumOfPlts" class="control-label"></label>
+                        <input asp-for="NumOfPlts" min="0" class="form-control" />
+                        <span asp-validation-for="NumOfPlts" class="text-danger"></span>
+                    </div>
+
+                </div>
+
+                <div class="col2">
+                    <div class="form-group">
+                        <label asp-for="Name" class="control-label"></label>
+                        <input asp-for="Name" class="form-control" />
+                        <span asp-validation-for="Name" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="MarketTypeId" class="control-label"></label>
+                        <select asp-for="MarketTypeId" class="form-control" asp-items="ViewBag.MarketTypeId"></select>
+                        <span asp-validation-for="MarketType" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="PhoneNumber" class="control-label"></label>
+                        <input asp-for="PhoneNumber" class="form-control" maxlength="10" />
+                        <span asp-validation-for="PhoneNumber" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Email" class="control-label"></label>
+                        <input asp-for="Email" class="form-control" readonly />
+                        <span asp-validation-for="Email" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="RowIndex" class="control-label"></label>
+                        <input asp-for="RowIndex" class="form-control" readonly />
+                        <span asp-validation-for="RowIndex" class="text-danger"></span>
+                    </div>
+
+
+
+                    @if (User.IsInRole(SD.Role_Supervisor))
+                    {
+                        <div class="form-group">
+                            <label asp-for="TBRN" class="control-label"></label>
+                            <input asp-for="TBRN" class="form-control" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" maxlength="6" />
+                            <span asp-validation-for="TBRN" class="text-danger"></span>
+                        </div>}
+
+
+
+
+                </div>
+
+            </div>
+
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+                <a asp-action="Index" class="btn btn-success">Back to List</a>
+                <a class="btn btn-dark" onclick="history.go(-1); return false;" href="#"><i class="fas fa-angle-double-left"></i></a><br />
+            </div>
+
+
+
+
+
+
+        </form>
+
+    </div>
+    <!-- /.row -->
+</div><!-- /.container-fluid -->
+<!-- Main content -->
+<!-- /.content -->
+
+<script>
+    function upperCaseF(a) {
+        setTimeout(function () {
+            a.value = a.value.toUpperCase();
+        }, 1);
+    }
+</script>
