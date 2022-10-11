@@ -19,6 +19,6 @@ C:\Users\ashlen_naidoo\OneDrive - FPT Group (PTY) LTD\Documents\GitHub\TruckBook
 C:\Users\ashlen_naidoo\OneDrive - FPT Group (PTY) LTD\Documents\GitHub\TruckBookingSystem\WarehouseReservationSystem.Models\obj\Debug\net6.0\WarehouseReservationSystem.Models.AssemblyInfo.cs
 C:\Users\ashlen_naidoo\OneDrive - FPT Group (PTY) LTD\Documents\GitHub\TruckBookingSystem\WarehouseReservationSystem.Models\obj\Debug\net6.0\WarehouseReservationSystem.Models.csproj.CoreCompileInputs.cache
 C:\Users\ashlen_naidoo\OneDrive - FPT Group (PTY) LTD\Documents\GitHub\TruckBookingSystem\WarehouseReservationSystem.Models\obj\Debug\net6.0\WarehouseReservationSystem.Models.dll
-C:\Users\ashlen_naidoo\OneDrive - FPT Group (PTY) LTD\Documents\GitHub\TruckBookingSystem\WarehouseReservationSystem.Models\obj\Debug\net6.0\refint\WarehouseReservationSystem.Models.dll
 C:\Users\ashlen_naidoo\OneDrive - FPT Group (PTY) LTD\Documents\GitHub\TruckBookingSystem\WarehouseReservationSystem.Models\obj\Debug\net6.0\WarehouseReservationSystem.Models.pdb
 C:\Users\ashlen_naidoo\OneDrive - FPT Group (PTY) LTD\Documents\GitHub\TruckBookingSystem\WarehouseReservationSystem.Models\obj\Debug\net6.0\ref\WarehouseReservationSystem.Models.dll
+C:\Users\ashlen_naidoo\OneDrive - FPT Group (PTY) LTD\Documents\GitHub\TruckBookingSystem\WarehouseReservationSystem.Models\bin\Debug\net6.0\ref\WarehouseReservationSystem.Models.dll
