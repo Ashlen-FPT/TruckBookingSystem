@@ -373,3 +373,7 @@ FodyWeavers.xsd
 *.cs
 *.targets
 *.vsidx
+*.cache
+*.json
+*.props
+*.targets
